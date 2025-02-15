@@ -1,67 +1,32 @@
-import {  useState } from 'react';
+import { useState } from 'react';
 import './mypokemon.css';
 
-interface PokemonData {
-  pokemons: {
-    [key: string]: {
-      name: string;
-      nickname: string;
-      id: number;
-      image: string;
-      hp: number;
-      ataque: number;
-      defesa: number;
-      spAtaque: number;
-      spDefesa: number;
-      velocidade: number;
-      bonusElement: number;
-      level: number;
-      exp: number;
-      type: string[];
-      habilidade: {
-        nome: string;
-        frequencia: string;
-        efeito: string;
-      };
-      ataques: {
-        skill: string;
-        cd: string;
-        type: string;
-        dano: string;
-        frequencia: string;
-        efeito?: string;
-
-      }[];
-    };
-  };
-}
-
-interface Attack {
-  skill: string;
-  cd: string;
-  type: string;
-  dano: string;
-  frequencia: string;
-}
+import { PokemonData } from '../pokemonDataInterface';
+import { Attack } from '../pokemonDataInterface';
 
 const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const [selectedPokemonId, setSelectedPokemonId] = useState<string>('1');
   const [viewMode, setViewMode] = useState<'info' | 'attacks'>('info');
-  
 
+  // Cria um objeto com os HPs iniciais de cada Pokémon
+  const initialHPValues = Object.keys(data.pokemons).reduce((acc, id) => {
+    const p = data.pokemons[id];
+    acc[id] = (p.hp + p.level) * 4;
+    return acc;
+  }, {} as { [key: string]: number });
+
+  const [hpValues, setHpValues] = useState(initialHPValues);
+
+  // Obtenha o Pokémon selecionado
   const pokemon = data.pokemons[selectedPokemonId];
-  const pokemonList = Object.values(data.pokemons);
-const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
-  
+
+  // Função para copiar comandos de dano dos ataques
   const handleCopyCommandDano = (attack: Attack) => {
     let danoFormatado = attack.dano;
 
-    // Substituir Fisico pelo ataque físico
     if (danoFormatado.includes('+Fisico')) {
       danoFormatado = danoFormatado.replace('+Fisico', `+${pokemon.ataque}`);
-    }
-    // Substituir spAtaque pelo ataque especial
-    else if (danoFormatado.includes('+spAtaque')) {
+    } else if (danoFormatado.includes('+spAtaque')) {
       danoFormatado = danoFormatado.replace('+spAtaque', `+${pokemon.spAtaque}`);
     }
 
@@ -71,37 +36,54 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
       .then(() => alert('Comando copiado!'))
       .catch(() => alert('Erro ao copiar'));
   };
+
   const handleCopyCommandCD = () => {
-
     const command = `1d20`;
-
     navigator.clipboard.writeText(command)
       .then(() => alert('Comando copiado!'))
       .catch(() => alert('Erro ao copiar'));
   };
 
-
+  // Função que aplica dano físico apenas ao Pokémon selecionado
   const handleDanoFisico = () => {
-    const dano = Number(prompt('Digite o valor do dano físico:'));
+    const dano = Number(prompt('Digite o valor do dano Físico:'));
     if (isNaN(dano)) return; // Se não for número, sai
 
     const defesaOriginal = pokemon.defesa;
-    // Calcula a diferença entre o dano e a defesa
     const diferenca = dano - defesaOriginal;
     
-    // Se o dano for menor ou igual à defesa, perde 1 ponto de HP
-    // Caso contrário, perde a diferença
-    let novoHP;
+    // Se o dano for menor ou igual à defesa, perde 1 ponto de HP; caso contrário, perde a diferença
+    let novoHP: number;
     if (diferenca <= 0) {
-      novoHP = currentHP - 1;
+      novoHP = hpValues[selectedPokemonId] - 1;
     } else {
-      novoHP = currentHP - diferenca;
+      novoHP = hpValues[selectedPokemonId] - diferenca;
     }
-    
-    // Evita que o HP fique negativo
+
     if (novoHP < 0) novoHP = 0;
     
-    setCurrentHP(novoHP);
+    // Atualiza o HP apenas para o Pokémon selecionado
+    setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
+  };
+  const handleDanoEspecial = () => {
+    const dano = Number(prompt('Digite o valor do dano Especial:'));
+    if (isNaN(dano)) return; // Se não for número, sai
+
+    const defesaOriginal = pokemon.spDefesa;
+    const diferenca = dano - defesaOriginal;
+    
+    // Se o dano for menor ou igual à defesa, perde 1 ponto de HP; caso contrário, perde a diferença
+    let novoHP: number;
+    if (diferenca <= 0) {
+      novoHP = hpValues[selectedPokemonId] - 1;
+    } else {
+      novoHP = hpValues[selectedPokemonId] - diferenca;
+    }
+
+    if (novoHP < 0) novoHP = 0;
+    
+    // Atualiza o HP apenas para o Pokémon selecionado
+    setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
   };
 
   return (
@@ -111,7 +93,6 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
           <div className="header">
             <h2>{pokemon.nickname}</h2>
             <span className="id">LV : {pokemon.level}</span>
-
           </div>
 
           <img src={pokemon.image} alt={pokemon.name} className="main-image" />
@@ -136,21 +117,19 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
               <div className="stats">
                 <div className="stat-item">
                   <span>HP</span>
-                  <h3>{currentHP}</h3>
+                  <h3>{hpValues[selectedPokemonId]}</h3>
                   <div className="stat-bar">
                     <div
                       className="stat-fill"
-                      style={{ width: `${currentHP}%` }} // ou outro cálculo para a barra
+                      style={{ width: `${hpValues[selectedPokemonId]}%` }}
                     ></div>
                   </div>
                   <div>
-            {/* Botão para dano físico */}
-            <button onClick={handleDanoFisico}>Dano Físico</button>
-          </div>
-          <div>
-            {/* Botão para dano especial */}
-            {/* <button onClick={handleDanoEspecial}>Dano Especial</button> */}
-          </div>
+                    <button onClick={handleDanoFisico}>Dano Físico</button>
+                  </div>
+                  <div>
+                    <button onClick={handleDanoEspecial}>Dano Especial</button>
+                  </div>
                 </div>
                 <div className="stat-row">
                   <div className="stat">
@@ -170,11 +149,9 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
                     <strong>{pokemon.spDefesa || 'N/A'}</strong>
                   </div>
                   <div className="stat">
-                    <span>velocidade</span>
+                    <span>Velocidade</span>
                     <strong>{pokemon.velocidade || 'N/A'}</strong>
                   </div>
-
-
                 </div>
                 <div className="stat">
                   <span>Type</span>
@@ -184,11 +161,11 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
                     ))}
                   </div>
                 </div>
-                {/* Adicionar mais stats conforme necessário */}
               </div>
               <div className="stat" style={{
-                marginTop: '30px', border: '#48bb78 1px solid', padding: '10px'
-
+                marginTop: '30px',
+                border: '#48bb78 1px solid',
+                padding: '10px'
               }}>
                 <span>Habilidade</span>
                 <div>
@@ -198,11 +175,10 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
                 </div>
               </div>
             </div>
-
           ) : (
             <div className="attacks-section">
               <button
-                onClick={() => handleCopyCommandCD()}
+                onClick={handleCopyCommandCD}
                 className="copy-button"
               >
                 D20
@@ -213,7 +189,6 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
                   <div className="attack-header">
                     <div>
                       <h4>{attack.skill}</h4>
-
                     </div>
                     <button
                       onClick={() => handleCopyCommandDano(attack)}
@@ -238,7 +213,7 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
 
       <div className="pokemon-list">
         <h3>Selecionar Pokémon</h3>
-        {pokemonList.map((p) => (
+        {Object.values(data.pokemons).map((p) => (
           <div
             key={p.id}
             className={`list-item ${selectedPokemonId === p.id.toString() ? 'selected' : ''}`}
@@ -246,7 +221,7 @@ const [currentHP, setCurrentHP] = useState((pokemon.hp + pokemon.level) * 4);
           >
             <img src={p.image} alt={p.name} className="thumb" />
             <div className="list-info">
-              <span >{p.nickname}</span>
+              <span>{p.nickname}</span>
               <small>Lv: {p.level || 5}</small>
             </div>
           </div>

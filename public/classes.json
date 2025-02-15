@@ -1,0 +1,65 @@
+{
+    "classes":[
+        {
+            "nome": "Artista",
+            "descrição":
+                "Algumas pessoas preferem competir em concursos não violentos, onde artistas usam aparência, carisma e presença de palco para influenciar jurados e plateia.",
+            
+            "imageUrl": "https://i.pinimg.com/736x/93/31/ae/9331ae7c13f6e41d3d31dd757c7ea456.jpg"
+        },
+        {
+            "nome": "Captor",
+            "descrição":
+                "Especialistas em capturar pokémons, os Captores possuem mira impecável e grande conhecimento sobre pokébolas, podendo ajustar e reparar suas funções para melhorar as taxas de captura. ",
+           
+            "imageUrl": "https://media.pocketmonsters.net/characters/51/5118.png"
+        },
+        {
+            "nome": "Criador",
+            "descrição":
+                "Algumas pessoas criam pokémons desde filhotes, tratando-os como filhos, para fortalecer vínculos e aprimorar suas habilidades. O cuidado amoroso reflete na saúde e força das gerações futuras.",
+            
+            "imageUrl": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/05/split-images-of-pokemon-adventure-typhlosion-and-raikou-1.jpg"
+        },
+        {
+            "nome": "Guerreiro",
+            "descrição":
+                "Alguns humanos, como os Guerreiros, superam muitos pokémons fisicamente e treinam tipos físicos como Lutador, Metal, Terra e Pedra com eficiência. ",
+            
+            "imageUrl": "https://pm1.aminoapps.com/7513/73aa33ed48bc7a24336815730bc9c6560f85a60ar1-500-500v2_00.jpg"
+        },
+        {
+            "nome": "Místico",
+            "descrição":
+                "Os Místicos possuem uma conexão profunda com os pokémons e a natureza, permitindo-lhes canalizar habilidades e realizar rituais surpreendentes. ",
+                        "imageUrl": "https://i.redd.it/zinnia-from-pokemon-oras-v0-jrazmi8919bc1.jpg?width=1492&format=pjpg&auto=webp&s=48a37b4291dfd163575187f799a8e9bb021e3d48"
+        },
+        {
+            "nome": "Pesquisador",
+            "descrição":
+                "O Pesquisador é um estudioso sagaz e intelectual, referência para todos por seu vasto conhecimento sobre pokémons e outros assuntos, usando essas habilidades para resolver desafios em sua jornada.",
+           
+            "imageUrl": "https://pbs.twimg.com/media/EZgDabhXsAATM2J.jpg:large"
+        },
+        {
+            "nome": "Psíquico",
+            "descrição":
+                "Nem todos os humanos no mundo Pokémon possuem habilidades naturais iguais. Os Psíquicos têm um potencial misterioso, capazes de manipular a matéria com a mente e desenvolver uma afinidade natural com pokémons Psíquicos.",
+        
+            "imageUrl": "https://www.nightwater.email/content/images/size/w600/2024/01/psychic-control-1.jpeg"
+        },
+        {
+            "nome": "Ranger",
+            "descrição":
+                "Rangers são autoridades que mantêm a paz e o equilíbrio, formando laços tão fortes com seus parceiros Pokémon que eles se unem à sua missão de justiça e bem-estar.",
+      
+            "imageUrl": "https://i.pinimg.com/736x/8b/59/20/8b5920eb441a712d72a3f043ecde892a.jpg"
+        },
+        {
+            "nome": "Treinador",
+            "descrição":
+                "Treinadores buscam ser os melhores, dominando estratégias para maximizar o potencial de seus Pokémon. Eles estudam ataques, superam resistências e aprimoram habilidades em cada batalha com dedicação e paixão.",
+            "imageUrl": "https://pbs.twimg.com/media/FpxAawCXoAE4ACu.jpg"
+        }
+    ]
+}

@@ -1,0 +1,370 @@
+{
+    "HoldItens": [
+        {
+            "Nome": "Amuleto da Sorte",
+            "Preço": "2400",
+            "Frequência": "Consumo",
+            "Efeito": "Até o fim do encontro, o número mínimo necessário no Teste de Acurácia para se obter um Crítico é reduzido em 3."
+        },
+        {
+            "Nome": "Argila",
+            "Preço": "3700",
+            "Frequência": "Constante",
+            "Efeito": "Quando o usuário usa um dos seguintes Golpes, eles sempre duram cinco rodadas: Refletor, Salvaguarda, Tela de Luz."
+        },
+        {
+            "Nome": "Armadura",
+            "Preço": "3000",
+            "Frequência": "Diária",
+            "Efeito": "Se o usuário sofreria um dano quadruplicado devido a possuir duas vulnerabilidades, ele sofre este dano apenas dobrado."
+        },
+        {
+            "Nome": "Atualização",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Aumente em 15 todos os ganhos de pontos de experiência."
+        },
+        {
+            "Nome": "Bandana",
+            "Preço": "6700",
+            "Frequência": "Por Encontro",
+            "Efeito": "Quando o usuário é reduzido a 0 PV ou menos como resultado de um ataque, role 1d20. Se o resultado for 16 ou mais, o usuário fica com 1 PV em vez disso."
+        },
+        {
+            "Nome": "Bateria",
+            "Preço": "200",
+            "Frequência": "Consumo",
+            "Efeito": "Quando o usuário é acertado por um Golpe Elétrico, a Bateria se energiza para elevar uma Fase de Ataque."
+        },
+        {
+            "Nome": "Bola de Ferro",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "A Velocidade do usuário é reduzida à metade e ele recebe a Capacidade Afundamento. Se for imune a dano de Terra, ele perde esta imunidade."
+        },
+        {
+            "Nome": "Bola de Fumaça",
+            "Preço": "2000",
+            "Frequência": "Consumo",
+            "Efeito": "Cria fumaça como pelos efeitos de Cortina de Fumaça em uma Explosão de 2 metros."
+        },
+        {
+            "Nome": "Boneca",
+            "Preço": "1000",
+            "Frequência": "Consumo",
+            "Efeito": "Um pokémon alvo com Inteligência menor que 5 fica distraído por 1d6 rodadas, durante as quais ele prestará atenção à boneca, não atacando ou perseguindo outros, a menos que provocado."
+        },
+        {
+            "Nome": "Bulbo",
+            "Preço": "200",
+            "Frequência": "Consumo",
+            "Efeito": "Quando o usuário é acertado por um Golpe de Água, o Bulbo entumece para elevar uma Fase de Ataque Especial."
+        },
+        {
+            "Nome": "Cinturão do Campeão",
+            "Preço": "6000",
+            "Frequência": "Constante",
+            "Efeito": "Quando causar dano superefetivo, adicione ao dano (antes de aplicar a vulnerabilidade) uma quantidade igual ao Bônus Elemental."
+        },
+        {
+            "Nome": "Disco de Memória",
+            "Preço": "Indisponível para Venda",
+            "Frequência": "Constante",
+            "Efeito": "Esta é uma categoria de itens que inclui vários itens diferentes, cada um é um sistema digital associado a um Tipo específico."
+        },
+        {
+            "Nome": "Disco Duvidoso",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Reduza em 30 todos os ganhos de pontos de experiência."
+        },
+        {
+            "Nome": "Eletrizante",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "O usuário ganha a Habilidade Eletricidade Estática, mas se um inimigo for Paralisado devido a isso, o usuário também será Paralisado."
+        },
+        {
+            "Nome": "Empoderador Elemental",
+            "Preço": "1800",
+            "Frequência": "Constante",
+            "Efeito": "Esta é uma categoria de itens que inclui vários itens diferentes, cada um associado a um Tipo específico. O pokémon adiciona seu Bônus Elemental aos Golpes do Tipo associado ao item. Isso ocorre de maneira independente do Bônus Elemental do pokémon abranger ou não Golpes daquele Tipo e se acumula com o próprio Bônus Elemental se houver."
+        },
+        {
+            "Nome": "Empoderador Especializado",
+            "Preço": "2000",
+            "Frequência": "Diária",
+            "Efeito": "Esta é uma categoria de itens que inclui vários itens que melhoram Atributos, cada um associado a um Atributo específico. O pokémon eleva uma Fase do Atributo associado ao item."
+        },
+        {
+            "Nome": "Erva Branca",
+            "Preço": "2000",
+            "Frequência": "Consumo",
+            "Efeito": "Todas as Fases negativas são corrigidas à Fase neutra."
+        },
+        {
+            "Nome": "Erva da Força",
+            "Preço": "2000",
+            "Frequência": "Consumo",
+            "Efeito": "Quando usar um dos seguintes Golpes, o Golpe perde o Descritor Preparo: Ataque do Céu, Cavar, Força Sombria, Lâmina de Vento, Mergulho, Pular, Quebra Crânio, Raio Solar, Voar."
+        },
+        {
+            "Nome": "Erva Mental",
+            "Preço": "2000",
+            "Frequência": "Consumo",
+            "Efeito": "Restaura Paixão, remove os efeitos impostos pelos Golpes Bis, Desabilitar, Provocação e Tormento e também pela Habilidade Anátema."
+        },
+        {
+            "Nome": "Escama de Dragão",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Os Golpes do usuário que possuem o Descritor Moral precisam obter resultados menores em 2 para ativar seu efeito de Moral."
+        },
+        {
+            "Nome": "Escama Marinha",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Enquanto embaixo d´água, eleva uma Fase da Defesa Especial. Se não possuía Deslocamento Subaquático, recebe Deslocamento Subaquático 4. Se já possuía, aumenta em 3 o Deslocamento Subaquático."
+        },
+        {
+            "Nome": "Eviolita",
+            "Preço": "6000",
+            "Frequência": "Constante",
+            "Efeito": "Eleva uma Fase de dois Atributos diferentes decididos no momento que a Eviolita é criada. A Eviolita só afeta pokémons que não estão em seu último estágio evoluído (e se lembre de que megaevoluções não são consideradas formas evolutivas, mas formas alternativas)."
+        },
+        {
+            "Nome": "Faixa Meditativa",
+            "Preço": "7200",
+            "Frequência": "Por Encontro",
+            "Efeito": "Se o usuário sofrer dano suficiente para ficar inconsciente quando antes estava com seus PV completos, ele fica com 1 PV em vez disso."
+        },
+        {
+            "Nome": "Farpa",
+            "Preço": "3650",
+            "Frequência": "Constante",
+            "Efeito": "O usuário perde um décimo de seus PV máximos a cada rodada. Se o usuário fizer um ataque Corpo a Corpo ou sofrer um ataque Corpo a Corpo, role um dado. Se o resultado for par, a Farpa é passada do usuário para o atacante (ou atacado). Para pokémons, isso só funciona se o outro pokémon não possui nenhum item Mantido."
+        },
+        {
+            "Nome": "Fita Adesiva",
+            "Preço": "1400",
+            "Frequência": "Constante",
+            "Efeito": "Quando o usuário usa um Golpe com o Descritor Prisão que causa 1d12 de dano por rodada, ele agora causa 1d20 de dano por rodada."
+        },
+        {
+            "Nome": "Flor Romântica",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Se ficar Apaixonado, o causador da Paixão também se Apaixona."
+        },
+        {
+            "Nome": "Gancho de Garra",
+            "Preço": "3500",
+            "Frequência": "Constante",
+            "Efeito": "Golpes com o Descritor Prisão terão a duração máxima."
+        },
+        {
+            "Nome": "Garra Afiada",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "O número mínimo necessário no Teste de Acurácia para se obter um Crítico é reduzido em 2. Os efeitos de Garra Afiada não se acumulam com nenhuma outra forma de aumentar a chance de Crítico."
+        },
+        {
+            "Nome": "Garra Rápida",
+            "Preço": "4200",
+            "Frequência": "Constante",
+            "Efeito": "Para fins de Iniciativa, adicione um valor igual a seu Bônus Elemental à sua Velocidade."
+        },
+        {
+            "Nome": "Graveto",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "O usuário pode fazer seus Golpes Corpo a Corpo com alcance de dois metros (eles continuam considerados Corpo a Corpo). Os seguintes Golpes não são modificados por este item: Afrochoque, Cabeça de Ferro, Cabeçada, Cabeçada Zen, Chute Duplo, Chute Flamejante, Chute Giratório, Chute Triplo, Chute Tropical, Investida de Cabeça, Megachute, Megassoco, Pelas Costas, Rasteira, Soco Bala, Soco Cometa, Soco de Drenagem, Soco de Fogo, Soco de Gelo, Soco Dinâmico, Soco Energizado, Soco do Trovão, Soco Estonteante, Soco Focalizado, Soco Rápido, Soco Sombrio, Supervoadora, Voadora."
+        },
+        {
+            "Nome": "Incenso Intenso",
+            "Preço": "1800",
+            "Frequência": "Constante",
+            "Efeito": "O usuário ganha a Habilidade Adiamento."
+        },
+        {
+            "Nome": "Incenso Místico",
+            "Preço": "1800",
+            "Frequência": "Constante",
+            "Efeito": "-1 às Dificuldades de Acurácia (ao mínimo de 2)."
+        },
+        {
+            "Nome": "Incenso Relaxante",
+            "Preço": "1800",
+            "Frequência": "Constante",
+            "Efeito": "+1 à Evasão."
+        },
+        {
+            "Nome": "Lente Larga",
+            "Preço": "5200",
+            "Frequência": "Diária",
+            "Efeito": "-3 à Dificuldade de Acurácia do próximo ataque (ao mínimo de 2)."
+        },
+        {
+            "Nome": "Localizador",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "O usuário perde suas imunidades a Tipos de dano."
+        },
+        {
+            "Nome": "Lodo",
+            "Preço": "4000",
+            "Frequência": "Constante",
+            "Efeito": "Perca um oitavo de seus PV máximos a cada rodada. Se for do Tipo Venenoso, além de não perder PV, recupera uma quantidade de Pontos de Vida por rodada igual à metade do que sofreria."
+        },
+        {
+            "Nome": "Metrônomo",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "Quando usar o mesmo Golpe que usou na rodada anterior, o usuário recebe um bônus à rolagem de dano igual ao dobro de seu Bônus Elemental."
+        },
+        {
+            "Nome": "Orbe Ardente",
+            "Preço": "4800",
+            "Frequência": "Constante",
+            "Efeito": "O usuário está com Queimadura."
+        },
+        {
+            "Nome": "Orbe Tóxico",
+            "Preço": "4800",
+            "Frequência": "Consumo",
+            "Efeito": "O usuário recebe um Veneno Mortal."
+        },
+        {
+            "Nome": "Orbe Vital",
+            "Preço": "8200",
+            "Frequência": "Constante",
+            "Efeito": "Quando causar dano, o usuário pode adicionar uma quantidade de dano igual a seu Bônus Elemental ao dano causado sacrificando um número de Pontos de Vida idêntico ao aumento do dano."
+        },
+        {
+            "Nome": "Ovo da Sorte",
+            "Preço": "Indisponível para Venda",
+            "Frequência": "Consumo",
+            "Efeito": "Dobre a quantidade de Pontos de Experiência recebidos."
+        },
+        {
+            "Nome": "Pedra do Rei",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Os Golpes Corpo a Corpo do usuário Atordoam se o resultado do Teste de Acurácia for 19 ou 20. Os efeitos da Pedra do Rei não se acumulam com outras formas de Atordoar."
+        },
+        {
+            "Nome": "Pedra do Sempre",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "O usuário não pode evoluir."
+        },
+        {
+            "Nome": "Pedra Flutuante",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "O Peso do usuário é reduzido em duas Categorias."
+        },
+        {
+            "Nome": "Pedra Oval",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "+1 à Força, mas apenas se era menor que 3."
+        },
+        {
+            "Nome": "Pedra Suave",
+            "Preço": "3500",
+            "Frequência": "Diária",
+            "Efeito": "Se usar Tempestade de Areia, a Tempestade de Areia permanecerá por três minutos (18 rodadas) em vez de apenas 2 minutos (12 rodadas)."
+        },
+        {
+            "Nome": "Pedra Úmida",
+            "Preço": "3500",
+            "Frequência": "Diária",
+            "Efeito": "Se usar Dança da Chuva, o clima Chuvoso permanecerá por três minutos (18 rodadas) em vez de apenas 2 minutos (12 rodadas)."
+        },
+        {
+            "Nome": "Placa Elemental",
+            "Preço": "Indisponível para Venda",
+            "Frequência": "Constante",
+            "Efeito": "Esta é uma categoria de itens que inclui várias Placas Elementais diferentes criadas pelo próprio Arceus, cada uma é associada a um Tipo específico. O pokémon adiciona o dobro de seu Bônus Elemental aos Golpes do Tipo associado ao item. Isso ocorre de maneira independente do Bônus Elemental do pokémon abranger ou não Golpes daquele Tipo e se acumula com o próprio Bônus Elemental se houver."
+        },
+        {
+            "Nome": "Polvilho Brilhante",
+            "Preço": "6000",
+            "Frequência": "Constante",
+            "Efeito": "+2 à Evasão."
+        },
+        {
+            "Nome": "Presa Afiada",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Os Golpes Corpo a Corpo do usuário Atordoam se o resultado do Teste de Acurácia for 19 ou 20. Os efeitos da Presa Afiada não se acumulam com outras formas de Atordoar."
+        },
+        {
+            "Nome": "Presa Marinha",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "Enquanto embaixo d´água, eleva uma Fase da Ataque Especial. Se não possuía Deslocamento Subaquático, recebe Deslocamento Subaquático 4. Se já possuía, aumenta em 3 o Deslocamento Subaquático."
+        },
+        {
+            "Nome": "Raiz Grande",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "Golpes que fazem recuperar Pontos de Vida de acordo com a quantidade de dano causado ao inimigo recuperam agora o dobro da quantidade de Pontos de Vida que recuperariam."
+        },
+        {
+            "Nome": "Restos",
+            "Preço": "2000",
+            "Frequência": "Consumo",
+            "Efeito": "O usuário recupera uma quantidade de Pontos de Vida por rodada igual a 1/16 de seus PV máximos até o fim do encontro."
+        },
+        {
+            "Nome": "Retardante",
+            "Preço": "1000",
+            "Frequência": "Constante",
+            "Efeito": "Esta é uma categoria de itens que inclui vários itens retardantes, ou seja, itens grandes que são um peso para o usuário, fazendo-o perder quatro Fases de um Atributo. Cada item afeta um Atributo diferente: a Cauda Retardante afeta a Velocidade, as Luvas Retardantes afetam o Ataque e os Olhos Retardantes afetam o Ataque Especial."
+        },
+        {
+            "Nome": "Revestimento Metálico",
+            "Preço": "3000",
+            "Frequência": "Diária",
+            "Efeito": "O usuário é tratado como se fosse apenas do Tipo Metálico até sofrer um dano que é resistido ou ignorado pelo Tipo Metálico."
+        },
+        {
+            "Nome": "Rocha Gelada",
+            "Preço": "3500",
+            "Frequência": "Diária",
+            "Efeito": "Se usar Granizo, o clima de Granizo permanecerá por três minutos (18 rodadas) em vez de apenas 2 minutos (12 rodadas)."
+        },
+        {
+            "Nome": "Rocha Magmática",
+            "Preço": "3000",
+            "Frequência": "Constante",
+            "Efeito": "O usuário ganha a Habilidade Flamejante, mas se um inimigo for Queimado devido a isso, o usuário também será Queimado."
+        },
+        {
+            "Nome": "Rocha Quente",
+            "Preço": "3500",
+            "Frequência": "Diária",
+            "Efeito": "Se usar Dia de Sol, o clima Ensolarado permanecerá por três minutos (18 rodadas) em vez de apenas 2 minutos (12 rodadas)."
+        },
+        {
+            "Nome": "Sino de Conchas",
+            "Preço": "5200",
+            "Frequência": "Diária",
+            "Efeito": "Quando causar dano a um inimigo, recupere uma quantidade de PV igual à metade do dano causado."
+        },
+        {
+            "Nome": "Talismã",
+            "Preço": "1000",
+            "Frequência": "Diária",
+            "Efeito": "O pokémon sempre tem sucesso em fugir."
+        },
+        {
+            "Nome": "Traje do Ceifador",
+            "Preço": "3000",
+            "Frequência": "Consumo",
+            "Efeito": "O usuário se envolve com o Traje do Ceifador. Até o fim do encontro, ele possui a Capacidade Silêncio e todos os ataques À Distância feitos contra ele têm as Dificuldades de Acurácia aumentadas em 2."
+        }
+    ]
+}

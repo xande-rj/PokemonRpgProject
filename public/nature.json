@@ -1,0 +1,250 @@
+{
+    "nature": [
+        {
+            "Natureza": "Ousada",
+            "AtributoAumentado": "Saúde",
+            "AtributoDiminuído": "Ataque",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Picante"
+        },
+        {
+            "Natureza": "Dócil",
+            "AtributoAumentado": "Saúde",
+            "AtributoDiminuído": "Defesa",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Azedo"
+        },
+        {
+            "Natureza": "Orgulhosa",
+            "AtributoAumentado": "Saúde",
+            "AtributoDiminuído": "Ataque Especial",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Seco"
+        },
+        {
+            "Natureza": "Excêntrica",
+            "AtributoAumentado": "Saúde",
+            "AtributoDiminuído": "Defesa Especial",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Amargo"
+        },
+        {
+            "Natureza": "Preguiçosa",
+            "AtributoAumentado": "Saúde",
+            "AtributoDiminuído": "Velocidade",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Doce"
+        },
+        {
+            "Natureza": "Desesperada",
+            "AtributoAumentado": "Ataque",
+            "AtributoDiminuído": "Saúde",
+            "SaborPredileto": "Picante",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Solitária",
+            "AtributoAumentado": "Ataque",
+            "AtributoDiminuído": "Defesa",
+            "SaborPredileto": "Picante",
+            "SaborqueNãoGosta": "Azedo"
+        },
+        {
+            "Natureza": "Firme",
+            "AtributoAumentado": "Ataque",
+            "AtributoDiminuído": "Ataque Especial",
+            "SaborPredileto": "Picante",
+            "SaborqueNãoGosta": "Seco"
+        },
+        {
+            "Natureza": "Travessa",
+            "AtributoAumentado": "Ataque",
+            "AtributoDiminuído": "Defesa Especial",
+            "SaborPredileto": "Picante",
+            "SaborqueNãoGosta": "Amargo"
+        },
+        {
+            "Natureza": "Brava",
+            "AtributoAumentado": "Ataque",
+            "AtributoDiminuído": "Velocidade",
+            "SaborPredileto": "Picante",
+            "SaborqueNãoGosta": "Doce"
+        },
+        {
+            "Natureza": "Rígida",
+            "AtributoAumentado": "Defesa",
+            "AtributoDiminuído": "Saúde",
+            "SaborPredileto": "Azedo",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Arrojada",
+            "AtributoAumentado": "Defesa",
+            "AtributoDiminuído": "Ataque",
+            "SaborPredileto": "Azedo",
+            "SaborqueNãoGosta": "Picante"
+        },
+        {
+            "Natureza": "Endiabrada",
+            "AtributoAumentado": "Defesa",
+            "AtributoDiminuído": "Ataque Especial",
+            "SaborPredileto": "Azedo",
+            "SaborqueNãoGosta": "Seco"
+        },
+        {
+            "Natureza": "Negligente",
+            "AtributoAumentado": "Defesa",
+            "AtributoDiminuído": "Defesa Especial",
+            "SaborPredileto": "Azedo",
+            "SaborqueNãoGosta": "Amargo"
+        },
+        {
+            "Natureza": "Relaxada",
+            "AtributoAumentado": "Defesa",
+            "AtributoDiminuído": "Velocidade",
+            "SaborPredileto": "Azedo",
+            "SaborqueNãoGosta": "Doce"
+        },
+        {
+            "Natureza": "Tímida",
+            "AtributoAumentado": "Ataque Especial",
+            "AtributoDiminuído": "Saúde",
+            "SaborPredileto": "Seco",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Modesta",
+            "AtributoAumentado": "Ataque Especial",
+            "AtributoDiminuído": "Ataque",
+            "SaborPredileto": "Seco",
+            "SaborqueNãoGosta": "Picante"
+        },
+        {
+            "Natureza": "Amável",
+            "AtributoAumentado": "Ataque Especial",
+            "AtributoDiminuído": "Defesa",
+            "SaborPredileto": "Seco",
+            "SaborqueNãoGosta": "Azedo"
+        },
+        {
+            "Natureza": "Imprudente",
+            "AtributoAumentado": "Ataque Especial",
+            "AtributoDiminuído": "Defesa Especial",
+            "SaborPredileto": "Seco",
+            "SaborqueNãoGosta": "Amargo"
+        },
+        {
+            "Natureza": "Quieta",
+            "AtributoAumentado": "Ataque Especial",
+            "AtributoDiminuído": "Velocidade",
+            "SaborPredileto": "Seco",
+            "SaborqueNãoGosta": "Doce"
+        },
+        {
+            "Natureza": "Enjoada",
+            "AtributoAumentado": "Defesa Especial",
+            "AtributoDiminuído": "Saúde",
+            "SaborPredileto": "Amargo",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Calma",
+            "AtributoAumentado": "Defesa Especial",
+            "AtributoDiminuído": "Ataque",
+            "SaborPredileto": "Amargo",
+            "SaborqueNãoGosta": "Picante"
+        },
+        {
+            "Natureza": "Gentil",
+            "AtributoAumentado": "Defesa Especial",
+            "AtributoDiminuído": "Defesa",
+            "SaborPredileto": "Amargo",
+            "SaborqueNãoGosta": "Azedo"
+        },
+        {
+            "Natureza": "Meticulosa",
+            "AtributoAumentado": "Defesa Especial",
+            "AtributoDiminuído": "Ataque Especial",
+            "SaborPredileto": "Amargo",
+            "SaborqueNãoGosta": "Seco"
+        },
+        {
+            "Natureza": "Atrevida",
+            "AtributoAumentado": "Defesa Especial",
+            "AtributoDiminuído": "Velocidade",
+            "SaborPredileto": "Amargo",
+            "SaborqueNãoGosta": "Doce"
+        },
+        {
+            "Natureza": "Séria",
+            "AtributoAumentado": "Velocidade",
+            "AtributoDiminuído": "Saúde",
+            "SaborPredileto": "Doce",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Medrosa",
+            "AtributoAumentado": "Velocidade",
+            "AtributoDiminuído": "Ataque",
+            "SaborPredileto": "Doce",
+            "SaborqueNãoGosta": "Picante"
+        },
+        {
+            "Natureza": "Apressada",
+            "AtributoAumentado": "Velocidade",
+            "AtributoDiminuído": "Defesa",
+            "SaborPredileto": "Doce",
+            "SaborqueNãoGosta": "Azedo"
+        },
+        {
+            "Natureza": "Alegre",
+            "AtributoAumentado": "Velocidade",
+            "AtributoDiminuído": "Ataque Especial",
+            "SaborPredileto": "Doce",
+            "SaborqueNãoGosta": "Seco"
+        },
+        {
+            "Natureza": "Ingênua",
+            "AtributoAumentado": "Velocidade",
+            "AtributoDiminuído": "Defesa Especial",
+            "SaborPredileto": "Doce",
+            "SaborqueNãoGosta": "Amargo"
+        },
+        {
+            "Natureza": "Comedida",
+            "AtributoAumentado": "Nenhum",
+            "AtributoDiminuído": "Nenhum",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Chata",
+            "AtributoAumentado": "Nenhum",
+            "AtributoDiminuído": "Nenhum",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Paciente",
+            "AtributoAumentado": "Nenhum",
+            "AtributoDiminuído": "Nenhum",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Sensata",
+            "AtributoAumentado": "Nenhum",
+            "AtributoDiminuído": "Nenhum",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Nenhum"
+        },
+        {
+            "Natureza": "Estoica",
+            "AtributoAumentado": "Nenhum",
+            "AtributoDiminuído": "Nenhum",
+            "SaborPredileto": "Nenhum",
+            "SaborqueNãoGosta": "Nenhum"
+        }
+    
+    ]
+}

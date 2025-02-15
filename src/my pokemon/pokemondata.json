@@ -1,0 +1,329 @@
+{
+    "pokemons": {
+    "1": {
+        "name": "Pikachu",
+        "nickname": "Chuchu",
+        "id": 1,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "hp": 8,
+        "ataque": 12,
+        "defesa": 4,
+        "spAtaque": 5,
+        "spDefesa": 8,
+        "velocidade": 8,
+        "bonusElement": 3,
+        "level": 17,
+        "exp": 0,
+        "type": ["Eletrico"],
+        "habilidade": {
+            "nome": "Eletricidade Estática",
+            "frequencia": "Diário ser acertado por um Golpe Corpo a Corpo.",
+            "efeito": "o atacante está Paralisado."
+        },
+        "ataques": [
+            {
+                "skill": "Investida",
+                "cd": "3",
+                "type": "normal",
+                "dano": "2d8+6+Fisico",
+                "frequencia": "À Vontade"
+            },
+            {
+                "skill": "Esfera Elétrica",
+                "cd": "10",
+                "type": "Eletrico",
+                "dano": "Quádruplo : 5d10+16+spAtaque, Pelo Menos o Triplo : 3d10+14+spAtaque, Pelo Menos o Dobro : 2d10+12+spAtaque, Outras :1d10+10+spAtaque",
+                "frequencia": "Por Encontro",
+                "efeito":"O alvo revela a Velocidade atual dele (com Fases, bônus e penalidades aplicados). O Dano Basal da Esfera Elétrica varia conforme a divisão entre a Velocidade atual do usuário e a Velocidade atual do alvo: Velocidade do Usuário comparada à Velocidade do Alvo Dano Basal da Esfera Elétrica Pelo Menos o"
+            },
+            {
+                "skill": "Ataque Rápido",
+                "cd": "2",
+                "type": "normal",
+                "dano": "1d12+6+Fisico",
+                "frequencia": "À Vontade",
+                "efeito":"Se um inimigo declarar um Golpe, é possível usar o Ataque Rápido no turno dele antes do Golpe dele."
+            },
+            {
+                "skill": "Investida Negra",
+                "cd": "4",
+                "type": "Dark",
+                "dano": "2d6+6+Fisico",
+                "frequencia": "Rodada Sim Rodada Não",
+                "efeito":"17 + o proximo ataque dark e critico"
+            }
+        ]
+    },
+    "2": {
+        "name": "Rockruff",
+        "nickname": "Roro",
+        "id": 2,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "hp": 14,
+        "ataque": 10,
+        "defesa": 3,
+        "spAtaque": 3,
+        "spDefesa": 4,
+        "velocidade": 8,
+        "bonusElement": 2,
+        "level": 14,
+        "exp": 0,
+        "type": ["Rock"],
+        "habilidade": {
+            "nome": "Espírito Vigoroso",
+            "frequencia": "Constante",
+            "efeito": "imunidade a Sono."
+        },
+        "ataques": [
+            {
+                "skill": "Uivo",
+                "cd": "Automática",
+                "type": "normal",
+                "dano": "Nenhum",
+                "frequencia": "",
+                "efeito":"Eleva uma Fase de Ataque do usuário."
+            },
+            {
+                "skill": "Investida",
+                "cd": "3",
+                "type": "normal",
+                "dano": "2d8+6+Fisico",
+                "frequencia": "À Vontade"
+            },
+            {
+                "skill": "Ataque de Areia",
+                "cd": "2",
+                "type": "Pedra",
+                "dano": "nenhum",
+                "frequencia": "Rodada Sim Rodada Não",
+                "efeito": "Os alvos têm suas Dificuldades de Acurácia aumentadas em 1 até o fim do encontro."
+            },
+            {
+                "skill": "Mordida",
+                "cd": "2",
+                "type": "Escuro",
+                "dano": "2d10+8++Fisico",
+                "frequencia": "À Vontade",
+                "efeito": "Se o resultado do Teste de Acurácia for 15 ou mais, o alvo está Atordoado."
+            }
+        ]
+    },
+    "3": {
+        "name": "Aron",
+        "nickname": "ronron",
+        "id": 3,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+        "hp": 10,
+        "ataque": 13,
+        "defesa": 18,
+        "spAtaque": 4,
+        "spDefesa": 2,
+        "velocidade": 4,
+        "bonusElement": 4,
+        "level": 24,
+        "exp": 0,
+        "type": ["Pedra", "Metal"],
+        "habilidade": {
+            "nome": "Robustez",
+            "frequencia": "Constante",
+            "efeito": "imunidade aos seguintes Golpes: Chifre Broca, Fissura, Guilhotina, Zero Absoluto. Se este pokémon estiver com todos os seus Pontos de Vida e um Golpe reduzir seus Pontos de Vida a zero ou menos, ele, em vez disso, é deixado com 1 Ponto de Vida"
+        },
+        "ataques": [
+            {
+                "skill": "Endurecer",
+                "cd": "Automática",
+                "type": "normal",
+                "dano": "",
+                "frequencia": "À Vontade",
+                "efeito": "Eleva uma Fase de Defesa do usuário."
+            },
+            {
+                "skill": "Metalizar Garra",
+                "cd": "3",
+                "type": "Metal",
+                "dano": "2d8+6+Fisico",
+                "frequencia": "À Vontade",
+                "efeito": "Se o resultado do Teste de Acurácia for 18 ou mais, eleva uma Fase de Ataque do usuário"
+            },{
+                "skill": "Ataque de Lama",
+                "cd": "2",
+                "type": "Terra",
+                "dano": "1d6+3+spAtaque",
+                "frequencia": "Rodada Sim Rodada Não",
+                "efeito": "Os alvos têm suas Dificuldades de Acurácia aumentadas em 1 até o fim do encontro."
+            },
+            {
+                "skill": "Tumba de Pedra",
+                "cd": "5",
+                "type": "Pedra",
+                "dano": "2d8+6+Fisico",
+                "frequencia": "Por Encontro",
+                "efeito": "Os alvos perdem uma Fase de Velocidade."
+            }
+        ]
+    },
+    "4": {
+        "name": "Poliwag",
+        "nickname": "Poli",
+        "id": 4,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+        "hp": 8,
+        "ataque": 7,
+        "defesa": 4,
+        "spAtaque": 12,
+        "spDefesa": 4,
+        "velocidade": 12,
+        "bonusElement": 4,
+        "level": 21,
+        "exp": 0,
+        "type": ["Água"],
+        "habilidade": {
+            "nome": "Velocidade na Água",
+            "frequencia": "Ativação Horária",
+            "efeito": "desde que o Clima esteja Chuvoso, ativar esta Habilidade eleva quatro Fases de Velocidade."
+        },
+        "ataques": [
+            {
+                "skill": "Jato dÁgua",
+                "cd": "2",
+                "type": "água",
+                "dano": "1d12+6+spAtaque",
+                "frequencia": "À Vontade"
+            },
+            {
+                "skill": "Dança da Chuva",
+                "cd": "Automática",
+                "type": "água",
+                "dano": "",
+                "frequencia": "Por Encontro",
+                "efeito":"Por 1d4+1 rodadas, a área é considerada Chuvosa, o que significa que danos de Água são multiplicados por 1,5 e danos de Fogo são reduzidos à metade."
+            },{
+                "skill": "Hipnose",
+                "cd": "6",
+                "type": "Psíquico",
+                "dano": "",
+                "frequencia": "Por Encontro",
+                "efeito":"O alvo Adormece."
+            },
+            {
+                "skill": "Bolha",
+                "cd": "2",
+                "type": "água",
+                "dano": "1d6+3+spAtaque",
+                "frequencia": "À Vontade",
+                "efeito":"Se o resultado do Teste de Acurácia for 16 ou mais, o alvo perde uma Fase de Velocidade."
+            }
+        ]
+    },
+    "5": {
+        "name": "Exeggutor",
+        "nickname": "Tutu",
+        "id": 5,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+        "hp": 14,
+        "ataque": 14,
+        "defesa": 11,
+        "spAtaque": 16,
+        "spDefesa": 10,
+        "velocidade": 15,
+        "bonusElement": 4,
+        "level": 20,
+        "exp": 0,
+        "type": ["Planta", "Psíquico"],
+        "habilidade": {
+            "nome": "Colheita",
+            "frequencia": "Gatilho Constante: ao se alimentar de uma fruta.",
+            "efeito": " jogue um dado. Se o resultado for par, o pokémon produz outra fruta exatamente da mesma variedade do item Mantido, que ele poderá usar a partir da próxima rodada. Se for ímpar nada acontece. Se o clima for Ensolarado, não haverá necessidade de jogar o dado, pois a fruta sempre será produzida com sucesso."
+        },
+        "ataques": [
+            {
+                "skill": "Semente Bala",
+                "cd": "Saraivada 4",
+                "type": "planta",
+                "dano": "1d10+4+Fisico",
+                "frequencia": "À Vontade",
+                "efeito":"Até cinco sementes podem ser atiradas, mas após o primeiro erro, esta Saraivada acaba."
+            },
+            {
+                "skill": "Esporos Paralisantes",
+                "cd": "11",
+                "type": "planta",
+                "dano": "",
+                "frequencia": "À Vontade",
+                "efeito":"Os alvos estão Paralisados."
+            },
+            {
+                "skill": "Pisotear",
+                "cd": "2",
+                "type": "normal",
+                "dano": "3d8+10+Fisico",
+                "frequencia": "Rodada Sim Rodada Não",
+                "efeito":"Se o resultado do Teste de Acurácia for 15 ou mais, o alvo está Atordoado. O Dano Basal por Pisotear aumenta em +1d10 se o alvo for Pequeno."
+            },
+            {
+                "skill": "Psicochoque",
+                "cd": "2",
+                "type": "normal",
+                "dano": "2d10+12+spAtaque",
+                "frequencia": "Rodada Sim Rodada Não",
+                "efeito":"A despeito de Psicochoque ser um Golpe Especial, use a Defesa do alvo (e não a Defesa Especial dele) para reduzir o dano sofrido."
+            }
+        ]
+    },
+    "6": {
+        "name": "Ariados",
+        "nickname": "Ari",
+        "id": 6,
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+        "hp": 9,
+        "ataque": 13,
+        "defesa": 11,
+        "spAtaque": 8,
+        "spDefesa": 8,
+        "velocidade": 8,
+        "bonusElement": 4,
+        "level": 21,
+        "exp": 0,
+        "type": ["Inseto", "Veneno"],
+        "habilidade": {
+            "nome": "Insonia",
+            "frequencia": "Constante",
+            "efeito": "Imune a sono."
+        },
+        "ataques": [
+            {
+                "skill": "Dança das Espadas",
+                "cd": "Automática",
+                "type": "normal",
+                "dano": "",
+                "frequencia": "Rodada Sim Rodada Não ",
+                "efeito":"REleva duas Fases de Ataque do usuário."
+            },
+            {
+                "skill": "Escuridão",
+                "cd": "8",
+                "type": "fantasma",
+                "dano": "",
+                "frequencia": "Diária",
+                "efeito":"O alvo perde uma quantidade de Pontos de Vida igual ao Nível do usuário"
+            },
+            {
+                "skill": "Sombra Traiçoeira",
+                "cd": "2",
+                "type": "fantasma",
+                "dano": "1d12+6+Fisico",
+                "frequencia": "À Vontade",
+                "efeito":"Se um inimigo for usar um Golpe, é possível usar a Sombra Traiçoeira como uma Interrupção antes do Golpe dele."
+            },
+            {
+                "skill": "Infestação",
+                "cd": "2",
+                "type": "inseto",
+                "dano": "",
+                "frequencia": "Por Encontro",
+                "efeito":"O alvo ganha a Cobertura Infestada. Aquele que possuir esta Cobertura perde um oitavo de seus PV máximos no início de cada rodada por cinco rodadas. Além disso, criaturas Infestadas estão Presas."
+            }
+        ]
+    }
+}
+}

@@ -1,0 +1,601 @@
+{
+    "berrie": [
+        {
+            "preco": 45,
+            "Fruto": "Persim",
+            "FrutaReal": "Caqui",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "X",
+            "Consumo": "Restaura Confusão"
+        },
+        {
+            "preco": 90,
+            "Fruto": "Wepear",
+            "FrutaReal": "Abacate",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Pinap",
+            "FrutaReal": "Abacaxi",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "X",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Pamtre",
+            "FrutaReal": "Açaí",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "X",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Bluk",
+            "FrutaReal": "Amora",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Nanab",
+            "FrutaReal": "Banana",
+            "Amarga": "",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Durin",
+            "FrutaReal": "Durião",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "X",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Razz",
+            "FrutaReal": "Framboesa",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Oran",
+            "FrutaReal": "Laranja",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "X",
+            "Consumo": "Recupera 1d8 PV."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Nomel",
+            "FrutaReal": "Limão",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Magost",
+            "FrutaReal": "Mangostão",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Watmel",
+            "FrutaReal": "Melancia",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Spelon",
+            "FrutaReal": "Melão",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Cornn",
+            "FrutaReal": "Milho",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "X",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Belue",
+            "FrutaReal": "Mirtilo",
+            "Amarga": "",
+            "Azeda": "X",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 90,
+            "Fruto": "Rabuta",
+            "FrutaReal": "Rambutão",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "",
+            "Consumo": "Nenhum."
+        },
+        {
+            "preco": 155,
+            "Fruto": "Figy",
+            "FrutaReal": "Figo",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Recupera um oitavo dos PV máximos, mas torna Confuso se o Pokémon desgosta de Picante."
+        },
+        {
+            "preco": 155,
+            "Fruto": "Aguav",
+            "FrutaReal": "Goiaba",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "X",
+            "Seca": "",
+            "Consumo": "Recupera um oitavo dos PV máximos, mas torna Confuso se o Pokémon desgosta de Amargo."
+        },
+        {
+            "preco": 225,
+            "Fruto": "Chesto",
+            "FrutaReal": "Castanha",
+            "Amarga": "X",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "",
+            "Consumo": "Restaura Sono."
+        },
+        {
+            "preco": 225,
+            "Fruto": "Cheri",
+            "FrutaReal": "Cereja",
+            "Amarga": "",
+            "Azeda": "",
+            "Doce": "",
+            "Picante": "",
+            "Seca": "X",
+            "Consumo": "Restaura Paralisia."
+        },
+        {
+            "preco": 225,
+            "Fruto": "Rawst",
+            "FrutaReal": "Morango",
+            "Amarga": "X",
+            "Consumo": "Restaura Queimadura."
+        },
+        {
+            "preco": 225,
+            "Fruto": "Aspear",
+            "FrutaReal": "Pera",
+            "Amarga": "X",
+            "Consumo": "Restaura Congelamento."
+        },
+        {
+            "preco": 225,
+            "Fruto": "Pecha",
+            "FrutaReal": "Pêssego",
+            "Amarga": "X",
+            "Consumo": "Restaura Veneno."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Kebia",
+            "FrutaReal": "Akebia",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Venenoso que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Charti",
+            "FrutaReal": "Alcachofra",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Pedra que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Haban",
+            "FrutaReal": "Araçá",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Dragão que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Coba",
+            "FrutaReal": "Babaco",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Voador que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Babiri",
+            "FrutaReal": "Biribá",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Metálico que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Occa",
+            "FrutaReal": "Cacau",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Fogo que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Shuca",
+            "FrutaReal": "Caju",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Terra que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Colbur",
+            "FrutaReal": "Cardo",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Trevas que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Chople",
+            "FrutaReal": "Chipotle",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Lutador que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Yache",
+            "FrutaReal": "Chirimoia",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Gelo que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Wacan",
+            "FrutaReal": "Guajilote",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Elétrico que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Kasib",
+            "FrutaReal": "Mandioca",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Fantasma que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Passho",
+            "FrutaReal": "Maracujá",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Água que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Payapa",
+            "FrutaReal": "Papaia",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Psíquico que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Tanga",
+            "FrutaReal": "Pitanga",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Inseto que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Roseli",
+            "FrutaReal": "Rosélia",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Fada que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Chilan",
+            "FrutaReal": "Sininho",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano Normal, sofre apenas metade do dano."
+        },
+        {
+            "preco": 275,
+            "Fruto": "Rindo",
+            "FrutaReal": "Tamarindo",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se sofrer um dano de Planta que seria superefetivo, sofre apenas dano neutro."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Starf",
+            "FrutaReal": "Carambola",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase um Atributo definido aleatoriamente (mas não Saúde)."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Apicot",
+            "FrutaReal": "Damasco",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase em Defesa Especial."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Lansat",
+            "FrutaReal": "Langsat",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, os Golpes do pokémon serão Críticos em resultados de Acurácia de 18 a 20. Este efeito dura 3 rodadas."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Liechi",
+            "FrutaReal": "Lichia",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase em Ataque."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Ganlon",
+            "FrutaReal": "Longana",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase em Defesa."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Petaya",
+            "FrutaReal": "Pitaia",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase em Ataque Especial."
+        },
+        {
+            "preco": 365,
+            "Fruto": "Salac",
+            "FrutaReal": "Salak",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Quando abaixo da metade dos PV, eleva uma Fase em Velocidade."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Kelpsy",
+            "FrutaReal": "Alga",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz o Ataque Basal em 1."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Hondew",
+            "FrutaReal": "Cantalupo",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz o Ataque Especial Basal em 1."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Qualot",
+            "FrutaReal": "Nêspera",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz a Defesa Basal em 1."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Pomeg",
+            "FrutaReal": "Romã",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz a Saúde Basal em 1."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Tamato",
+            "FrutaReal": "Tomate",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz a Velocidade Basal em 1."
+        },
+        {
+            "preco": 375,
+            "Fruto": "Grepa",
+            "FrutaReal": "Uva",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Seca": "X",
+            "Consumo": "Se for do interesse, reduz a Defesa Especial Basal em 1."
+        },
+        {
+            "preco": 555,
+            "Fruto": "Lum",
+            "FrutaReal": "Ameixa",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Restaura qualquer Condição."
+        },
+        {
+            "preco": 1375,
+            "Fruto": "Leppa",
+            "FrutaReal": "Maçã",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Restaura um uso de um Golpe."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Enigma",
+            "FrutaReal": "Enigma",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Se acertado por um Golpe superefetivo, recupera um quarto dos PV máximos."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Micle",
+            "FrutaReal": "Fruta Milagrosa",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando abaixo da metade dos PV, os Golpes do pokémon terão Dificuldades de Acurácia reduzidas em 2. Este efeito dura 3 rodadas."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Kee",
+            "FrutaReal": "Guaraná",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando acertado por um Golpe Físico, eleva uma Fase em Defesa."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Jaboca",
+            "FrutaReal": "Jabuticaba",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando acertado por um ataque Corpo a Corpo, o atacante sofre metade do dano causado."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Maranga",
+            "FrutaReal": "Jaca",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando acertado por um Golpe Especial, eleva uma Fase em Defesa Especial."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Rowap",
+            "FrutaReal": "Jambo",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando acertado por um ataque À Distância, o atacante sofre metade do dano causado."
+        },
+        {
+            "preco": 2555,
+            "Fruto": "Custap",
+            "FrutaReal": "Pinha",
+            "Amarga": "X",
+            "Azeda": "X",
+            "Doce": "X",
+            "Picante": "X",
+            "Consumo": "Quando abaixo de 10% dos PV, os Golpes causadores de dano do pokémon adquirem o Descritor Interrupção se puderem ser usados À Vontade. Este efeito dura 1 rodada."
+        }
+    ]
+}

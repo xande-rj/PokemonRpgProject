@@ -1,0 +1,89 @@
+{
+    "ItensMed": [
+        {
+            "ItemPokémon": "Poção",
+            "Preço": "200",
+            "Modificador": "Restaura 2d12+10 PV"
+        },
+        {
+            "ItemPokémon": "Superpoção",
+            "Preço": "350",
+            "Modificador": "Restaura 3d12+20 PV"
+        },
+        {
+            "ItemPokémon": "Hiperpoção",
+            "Preço": "450",
+            "Modificador": "Restaura 4d12+30 PV"
+        },
+        {
+            "ItemPokémon": "Leite",
+            "Preço": "400",
+            "Modificador": "Restaura 8d6+25 Pontos de Vida"
+        },
+        {
+            "ItemPokémon": "Polvilho Energizante",
+            "Preço": "300",
+            "Modificador": "Restaura 4d10+15 Pontos de Vida, mas é Repulsivo"
+        },
+        {
+            "ItemPokémon": "Raiz Energizante",
+            "Preço": "450",
+            "Modificador": "Restaura 4d20+15 Pontos de Vida, mas é Repulsivo"
+        },
+        {
+            "ItemPokémon": "Antídoto",
+            "Preço": "250",
+            "Modificador": "Restaura Veneno"
+        },
+        {
+            "ItemPokémon": "Antiparalisante",
+            "Preço": "200",
+            "Modificador": "Restaura Paralisia"
+        },
+        {
+            "ItemPokémon": "Despertador",
+            "Preço": "200",
+            "Modificador": "Restaura Sono"
+        },
+        {
+            "ItemPokémon": "Pomada",
+            "Preço": "250",
+            "Modificador": "Restaura Queimadura"
+        },
+        {
+            "ItemPokémon": "Anticongelante",
+            "Preço": "200",
+            "Modificador": "Restaura Congelamento"
+        },
+        {
+            "ItemPokémon": "Panaceia",
+            "Preço": "500",
+            "Modificador": "Restaura todas as Condições"
+        },
+        {
+            "ItemPokémon": "Polvilho Curativo",
+            "Preço": "300",
+            "Modificador": "Restaura todas as Condições, mas é Repulsivo"
+        },
+        {
+            "ItemPokémon": "Revivente",
+            "Preço": "300",
+            "Modificador": "Restaura um pokémon inconsciente a 20 Pontos de Vida"
+        },
+        {
+            "ItemPokémon": "Erva Revivente",
+            "Preço": "200",
+            "Modificador": "Restaura um pokémon inconsciente a 10 Pontos de Vida, mas é Repulsivo"
+        },
+        {
+            "ItemPokémon": "Éter",
+            "Preço": "350",
+            "Modificador": "Restaura o uso de um Golpe Por Encontro ou Centro Pokémon para usá-lo novamente"
+        },
+        {
+            "ItemPokémon": "Elixir",
+            "Preço": "750",
+            "Modificador": "Restaura o uso de todos os Golpes Por Encontro ou Centro Pokémon para usá-los novamente"
+        }
+    ]
+}

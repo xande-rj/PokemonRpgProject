@@ -1,0 +1,1363 @@
+{
+  "artista": {
+    "nome": "Artista",
+    "imageUrl": "https://i.pinimg.com/736x/93/31/ae/9331ae7c13f6e41d3d31dd757c7ea456.jpg",
+    "requisitos": "Defesa Especial 13, Velocidade 13",
+    "periciasClasse": ["Acrobacia", "Empatia", "Intimidação", "Manha", "Manipulação", "Percepção", "Performance", "Prestidigitação"],
+    "talentos": [
+      {
+        "nome": "Fama",
+        "frequencia":"Constante",
+        "descricao": "seus pokémons recebem 20% de pontos deexperiência adicionais a cada vez que receberem pontos de experiência por Concursos. Se você ganhar um Concurso, receba 15% a mais do prêmio financeiro que receberia."
+      },
+      {
+        "nome": "Postura",
+        "frequencia":"Constante",
+        "descricao": "seus pokémons podem possuir uma soma de Aptidões igual a 24. Além disso, eles podem receber os efeitos de quaisquer Temperos até atingirem este máximo. Se um pokémon beneficiado por Postura alcança mais do que 20 pontos somando todas as suas Aptidões e é posteriormente trocado com alguém que não é um Artista, o pokémon mantém suas Aptidões melhoradas, mas o novo dono não poderá acessar mais do que 20 pontos de Aptidões por Concurso, a menos que possua outra característica que permita elevar as Aptidões de seus pokémons. "
+      }
+    ]
+  },"beldade": {
+    "nome": "Beldade",
+    "imageUrl": "https://thicc-uwu.mywaifulist.moe/waifus/elesa-pokemon/YJSUay1nmL3mM0BEUltXWf9LgeJQKksCCFdw3MZr.webp?class=thumbnail",
+    "requisitos": "1 prêmio em Desfile de Beleza.",
+    "multi":"Defesa Especial 16, 2 prêmios em Desfiles de Beleza, um pokémon com Beleza 12",
+    "descricao": "Beldades são Artistas belos e elegantes, que atuam como modelos e ensinam seus pokémons",
+    "periciasClasse": ["Manipulação","Performance."],
+    "talentos": [
+      {
+        "nome": "Beleza",
+        "frequencia":"Constante",
+        "descricao": "quando um pokémon seu com pelo menos um prêmio em Desfile de Beleza sobe de nível, você pode adicionar pontos de Atributos ao Ataque Especial, ignorando a Relação Basal."
+      },
+      {
+        "nome": "Vantagem da Beldade",
+        "frequencia":"Constante",
+        "descricao": "Adicione seu MDE à Pontuação de aparência durante a Apresentação de um Desfile de Beleza. Seus pokémons com Lealdade 2 ou mais são belos: eles são considerados com pelo menos um prêmio em um Desfile de Beleza para fins de seus Talentos. Todos os seus pokémons podem possuir até 20 pontos na Aptidão Beleza, e podem Apelar a até 5 pontos de Aptidão quando poderiam Apelar à Beleza."
+      }
+    ]
+  },"cativante": {
+    "nome": "Cativante",
+    "imageUrl": "https://cdn.donmai.us/sample/bf/68/__squirtle_and_green_pokemon_and_1_more_drawn_by_rainys_bill__sample-bf689499cc8a5ec9ae9440fdeafb093e.jpg",
+    "requisitos": ": 1 prêmio em Concurso de Fofura.",
+    "multi":"Defesa Especial 16, 2 prêmios em Concursos de Fofura, um pokémon com Ternura 12. Um Criador pode ignorar o requisito de Defesa Especial 16",
+    "descricao": "Estes Artistas são adoráveis presenças em concursos. Seus pokémons são igualmente imbatíveis quando se trata de charme afetuoso e fazem com que a maioria dos inimigos se compadeça deles ou os ame",
+    "periciasClasse": ["Furtividade","Performance"],
+    "talentos": [
+      {
+        "nome": "Ternura",
+        "frequencia":"Constante",
+        "descricao": "quando um pokémon seu com pelo menos um prêmio em Concurso de Fofura sobe de nível, você pode adicionar pontos de Atributos à Velocidade, ignorando a Relação Basal."
+      },
+      {
+        "nome": "Vantagem do Cativante",
+        "frequencia":"Constante",
+        "descricao": "Adicione seu MDE à Pontuação de aparência durante a Apresentação de um Concurso de Fofura. Seus pokémons com Lealdade 2 ou mais são fofinhos: eles são considerados com pelo menos um prêmio em um Concurso de Fofura para fins de seus Talentos. Todos os seus pokémons podem possuir até 20 pontos na Aptidão Ternura, e podem Apelar a até 5 pontos de Aptidão quando poderiam Apelar à Ternura."
+      }
+    ]
+  },"coreógrafo": {
+    "nome": "Coreógrafo",
+    "imageUrl": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/c4697ff2-2e6c-436a-bce6-68faedd35f26/width=450/2144056.jpeg",
+    "requisitos": "Velocidade 15.",
+    "multi":"Bardo, Velocidade 16. Um Malabarista com Saúde 16 também se qualifica.",
+    "descricao": "Os Coreógrafos sabem como fazer movimentos atrativos ainda mais impressionantes.",
+    "periciasClasse": ["Acrobacia","Performance."],
+    "talentos": [
+      {
+        "nome": "Autor",
+        "frequencia":"Diária",
+        "descricao": "Alvo: um pokémon seu ou aliado. esta Característica de Classe envolve escrever e planejar performances artísticas. Escolha um Golpe conhecido pelo pokémon alvo e adicione o Descritor Som ou o Descritor Dança aos Descritores daquele Golpe, mas apenas para o pokémon alvo. Um pokémon não pode, ao longo de sua lista de Golpes, possuir mais do que três Golpes com Descritores adicionados por esta Característica de Classe. Quando o alvo aprender um novo Golpe, você pode escolher remover o Descritor Som ou o Descritor Dança de um Golpe que ele já possuía para adicionar o Descritor Som ou o Descritor Dança ao novo Golpe aprendido. Isso só pode ser feito se o Descritor Som ou o Descritor Dança foram introduzidos no Golpe mediante esta Característica de Classe, de modo que o pokémon continue com no máximo três Golpes com Descritores adicionados por esta Característica de Classe. Finalmente, um mesmo Golpe pode receber tanto o Descritor Som quanto o Descritor Dança, contudo ele contará duas vezes para o máximo de três adições de Descritores permitido por esta Característica de Classe."
+      },
+      {
+        "nome": "Nota de Palco",
+        "frequencia":"Constante",
+        "descricao": "uma vez por concurso, quando seu pokémon executar uma Canção (ou seja, um Golpe com o Descritor Som), role 1d6 extra durante a Apelação. Uma vez por concurso, quando seu pokémon executar uma Dança (ou seja, um Golpe com o Descritor Dança), role 1d6 extra durante a Apelação."
+      }
+    ]
+  },"descolado": {
+    "nome": "Descolado",
+    "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3c16901c-5cf2-427d-bda3-079d0b96a23d/dgfq9fb-2f7e7059-7062-4e2d-a760-07bc855d88da.jpg/v1/fit/w_828,h_1340,q_70,strp/pokemon___diantha_by_vivivoovoo_dgfq9fb-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcLzNjMTY5MDFjLTVjZjItNDI3ZC1iZGEzLTA3OWQwYjk2YTIzZFwvZGdmcTlmYi0yZjdlNzA1OS03MDYyLTRlMmQtYTc2MC0wN2JjODU1ZDg4ZGEuanBnIiwid2lkdGgiOiI8PTk4OCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kSusDaoocVM5Ikfvtdox38bzxYTAj6k49mxBQQIkVsA",
+    "requisitos": "1 prêmio em Espetáculo.",
+    "multi": "Defesa Especial 16, 2 prêmios em Espetáculos, um pokémon com Estilo 12. Um Treinador pode ignorar o requisito de Defesa Especial 16.",
+    "descricao": "Esses líderes criam e definem as tendências, e governam o palco com estilo. Um Descolado intimida seus concorrentes só em estar lá, sem se rebaixar, e transmite sua posição de superioridade criativa e admirável a seus pokémons. Descontraídos, legais e estilosos, Descolados mostrarão quão incríveis seus pokémons podem ser, obtendo fãs onde forem.",
+    "periciasClasse": ["Intimidação", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Estilo",
+        "frequencia": "Constante",
+        "descricao": "Quando um pokémon seu com pelo menos um prêmio em Espetáculo sobe de nível, você pode adicionar pontos de Atributos ao Ataque, ignorando a Relação Basal."
+      },
+      {
+        "nome": "Vantagem do Descolado",
+        "frequencia": "Constante",
+        "descricao": "Adicione seu MDE à Pontuação de aparência durante a Apresentação de um Espetáculo. Seus pokémons com Lealdade 2 ou mais são descolados: eles são considerados com pelo menos um prêmio em um Espetáculo para fins de seus Talentos. Todos os seus pokémons podem possuir até 20 pontos na Aptidão Estilo, e podem Apelar a até 5 pontos de Aptidão quando poderiam Apelar ao Estilo."
+      }
+    ]
+  },"estilista": {
+    "nome": "Estilista",
+    "imageUrl": "https://cdn.donmai.us/original/95/97/95970f30cbf59624e41d2aafe657c9b2.jpg",
+    "requisitos": "Defesa Especial 16.",
+    "multi": "Impossível.",
+    "descricao": "Alguns Artistas não querem toda a glória para si mesmos. Os Estilistas criam acessórios e vestuários para outras pessoas e para pokémons, que ganham notoriedade e vencem concursos com eles. São desenvolvedores de linhas de moda e imprescindíveis para se criar a aparência desejada. Um Estilista sabe realmente como fazer alguém se destacar em uma multidão e lhes dar o aspecto necessário como uma versão mais forte de si mesmo.",
+    "periciasClasse": ["Concentração", "Incansável"],
+    "talentos": [
+      {
+        "nome": "Acessório Discreto",
+        "frequencia": "Diária",
+        "descricao": "Após vinte minutos de trabalho, você cria um Acessório que concede +1 à Pontuação de aparência durante a Apresentação de um Concurso. Pokémons e humanos podem se beneficiar de até três Acessórios. Peças de Vestuário são Acessórios, mas só podem ser equipados e ativados por humanos. Itens Mantidos, ao contrário, só podem ser equipados e ativados por pokémons, a menos que também sejam considerados Peças de Vestuário, e apenas um item Mantido é aceito em batalhas porque apenas um item é levado para dentro da pokébola com o pokémon."
+      },
+      {
+        "nome": "Personalização",
+        "frequencia": "Constante",
+        "descricao": "Adicione o número de Acessórios feitos por você usados pelo pokémon à Pontuação de aparência durante a Apresentação de um Concurso."
+      }
+    ]
+  },"nerd": {
+    "nome": "Nerd",
+    "imageUrl": "https://safebooru.org//images/4031/49fb10a884acfa7a8261353c8c59bd9d2e1b3268.png?4211829",
+    "requisitos": "1 prêmio em Gincana.",
+    "multi": "Defesa Especial 16, 2 prêmios em Gincanas, um pokémon com Perspicácia 12. Um Pesquisador pode ignorar o requisito de Defesa Especial 16.",
+    "descricao": "O Nerd estuda e deseja transmitir conhecimento legítimo aos seus pokémons. A presença de seus pokémons pode não ter o mesmo impacto que a de outros Artistas, mas uma vez que seu pokémon execute um truque complexo, ou fale em linguagem humana, a maioria das pessoas está aplaudindo de pé. Nerds muitas vezes participam de competições de jogos.",
+    "periciasClasse": ["História", "Programação"],
+    "talentos": [
+      {
+        "nome": "Perspicácia",
+        "frequencia": "Constante",
+        "descricao": "Quando um pokémon seu com pelo menos um prêmio em Gincana sobe de nível, você pode adicionar pontos de Atributos à Defesa Especial, ignorando a Relação Basal."
+      },
+      {
+        "nome": "Vantagem do Nerd",
+        "frequencia": "Constante",
+        "descricao": "Adicione seu MDE à Pontuação de aparência durante a Apresentação de uma Gincana. Seus pokémons com Lealdade 2 ou mais são perspicazes: eles são considerados com pelo menos um prêmio em uma Gincana para fins de seus Talentos. Todos os seus pokémons podem possuir até 20 pontos na Aptidão Perspicácia, e podem Apelar a até 5 pontos de Aptidão quando poderiam Apelar à Perspicácia."
+      }
+    ]
+  },"parrudo": {
+    "nome": "Parrudo",
+    "imageUrl": "https://pt.quizur.com/_image?href=https%3A%2F%2Fimg.quizur.com%2Ff%2Fimg5ec6bcedac7db5.86656041.png%3FlastEdited%3D1590082815&w=400&h=400&f=webp",
+    "requisitos": "1 prêmio em Concurso de Fisiculturismo.",
+    "multi": "Defesa 16, 2 prêmios em Concursos de Fisiculturismo, um pokémon com Vigor 12. Um Guerreiro pode ignorar o requisito de Defesa 16.",
+    "descricao": "Há admiração por aqueles com corpos perfeitamente construídos. O Parrudo forjou seu corpo mediante musculação e espera que seus pokémons alcancem este mesmo nível de resistência física, se tornando os pokémons mais rígidos e robustos que existem. Se o corpo, por si só, não for suficiente para intimidar seus inimigos, a força real que geralmente vem com ele os afastará.",
+    "periciasClasse": ["Força", "Salto"],
+    "talentos": [
+      {
+        "nome": "Vigor",
+        "frequencia": "Constante",
+        "descricao": "Quando um pokémon seu com pelo menos um prêmio em Concurso de Fisiculturismo sobe de nível, você pode adicionar pontos de Atributos ao Defesa, ignorando a Relação Basal."
+      },
+      {
+        "nome": "Vantagem do Parrudo",
+        "frequencia": "Constante",
+        "descricao": "Adicione seu MD à Pontuação de aparência durante a Apresentação de um Concurso de Fisiculturismo. Seus pokémons com Lealdade 2 ou mais são vigorosos: eles são considerados com pelo menos um prêmio em um Concurso de Fisiculturismo para fins de seus Talentos. Todos os seus pokémons podem possuir até 20 pontos na Aptidão Vigor, e podem Apelar a até 5 pontos de Aptidão quando poderiam Apelar ao Vigor."
+      }
+    ]
+  },"captor": {
+    "nome": "Captor",
+    "imageUrl": "https://media.pocketmonsters.net/characters/51/5118.png",
+    "requisitos": "Saúde 13, Velocidade 13",
+    "descricao": "Grandes especialistas em capturar pokémons podem encontrar qualquer pokémon selvagem e obter uma nova marca em sua pokéagenda",
+    "periciasClasse": ["Acrobacia","Corrida", "Engenharia","História", "Incansável","Jejum", "Prestidigitação", "Programação."],
+    "talentos": [
+      {
+        "nome": "No Ponto Fraco!",
+        "frequencia": "Diária. A cada 5 Níveis, receba um uso diário adicional.",
+        "descricao": "Quando você causa ao alvo da pokébola uma quantidade de dano igual a seu MV que não pode ser reduzido pela Defesa ou Defesa Especial. Este Talento pode ser usado quando fizer uma rolagem para Captura ou quando arremessar uma pokébola para causar dano ao alvo usando-a como uma arma de arremesso conforme Armas."
+      },
+      {
+        "nome": "Ponto de Captura",
+        "frequencia": "Constante",
+        "descricao": "Quando você arremessa uma pokébola subtraia metade de seu MV das rolagens de d100 feitas quando jogar uma pokébola."
+      }
+    ]
+  },"artífice": {
+    "nome": "Artífice",
+    "imageUrl": "https://i0.wp.com/sixprizes.com/wp-content/uploads/2015/12/blacksmith-flf-16-9.jpg?fit=577,325&ssl=1",
+    "requisitos": "ter achado pelo menos um item que não pode ser comprado em pokélojas",
+    "multi": "Estilista ou Pesquisador, Saúde 18. Um Guerreiro com Velocidade 18 também se qualifica.",
+    "descricao": "Artífices são artesões que podem replicar praticamente qualquer coisa. Com prática o suficiente, eles podem começar a criar seus próprios dispositivos e refazer ferramentas de uma era antiga, em que espadas e armaduras eram mais comuns que dispositivos elétricos.",
+    "periciasClasse": ["Força","História."],
+    "talentos": [
+      {
+        "nome": "Empoderador Elemental",
+        "frequencia": "Semanal",
+        "descricao": "após quatro horas de trabalho cansativo (consumindo 20 PV) com os materiais adequados, você cria um Empoderador Elemental para um Tipo à sua escolha. Você pode dar a ele o formato e o nome que quiser."
+      },
+      {
+        "nome": "Forja",
+        "frequencia": "Semanal",
+        "descricao": "após dez horas de trabalho com os materiais adequados, você cria uma arma. Faça o seguinte cálculo para descobrir o Nível da Arma (cujo máximo é 100): seu Nível + um número de d6 igual a seu MV. A arma concede um bônus às rolagens de dano feitas com ela idêntico ao Bônus Elemental que um pokémon receberia no Nível igual ao Nível da Arma. Você pode usar até duas matérias-primas durante a forja da arma. A pokémons, uma arma é um item Mantido. "
+      }
+    ]
+  },"colecionador": {
+    "nome": "Colecionador",
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/146810377/rectangle_large_type_2_5a06a96facd2a20b215507ac8d2fb3e5.jpeg?width=1200",
+    "requisitos": "ter capturado dez pokémons.",
+    "multi": " Saúde 14, Velocidade 14, ter capturado vinte pokémons.",
+    "descricao": "Aos Colecionadores, cada pokémon é imprescindível para se ter. Eles precisam pegar todos eles. Esse Captor não sonha com a Liga Pokémon ou com qualquer holofote no palco, eles têm uma lista de pokémons e precisam capturar cada um deles",
+    "periciasClasse": ["Empatia", "Furtividade."],
+    "talentos": [
+      {
+        "nome": "Contagem",
+        "frequencia": "Constante",
+        "descricao": "de agora em diante, você recebe um Nível para cada 8 espécies diferentes de pokémons possuídas, em vez de para cada 10 espécies diferentes. Você tem uma estatística chamada Contagem, que é igual a seu MV somado ao número de Níveis que ganhou devido ao número de espécies diferentes de pokémons possuídas."
+      },
+      {
+        "nome": "Maníaco por Captura",
+        "frequencia": "Diária. A cada 10 Níveis, receba um uso diário adicional.",
+        "descricao": "você faz um Teste de Captura subtraia sua Contagem do resultado do Teste de Captura."
+      }
+    ]
+  },"domador": {
+    "nome": "Domador",
+    "imageUrl": "https://i.pinimg.com/736x/1b/a2/b3/1ba2b3715bd55e3a2a33774b20d3e70a.jpg",
+    "requisitos": "Velocidade 16.",
+    "multi": "Diferentes Classes só podem se tornar Domadores se possuírem outros requisitos, conforme a abaixo: Aventureiro Saúde 14 ,Colecionador Velocidade 18 ,Observador Saúde 14, Velocidade 14, Petrologista Saúde 14, Cavar e Cavar",
+    "descricao": "Para aumentar a chance de captura, Domadores se envolvem diretamente com a presa que buscam. ",
+    "periciasClasse": ["Acrobacia", "Força"],
+    "talentos": [
+      {
+        "nome": "Domação",
+        "frequencia": "À Vontade",
+        "descricao": "você nomeia o alvo sua Presa. Quando calcular a Chance de Captura de sua Presa, reduza o Nível dela por metade de seu MV. Você só pode possuir uma Presa e só pode declarar um alvo uma Presa no início de sua rodada."
+      },
+      {
+        "nome": "Laçar",
+        "frequencia": "Diária. A cada 5 Níveis, receba um uso diário adicional.",
+        "descricao": "Um pokémon ou um humano role 1d20 + MV. Se o resultado for 12 ou mais, o alvo está Laçado. Um alvo Laçado não pode se mover além de seis metros de você. Ele pode tentar se libertar da Condição se não estiver também Confuso, inconsciente ou dormindo. Para tentar se libertar, ele deve sacrificar a ação dele para fazer uma rolagem. Se ele for um pokémon, ele rola 1d20 + Capacidade Força. Se for um humano, rola 1d20 + metade de seu MA. Em uma rolagem de 14 ou mais, ele se liberta. "
+      }
+    ]
+  },"engenheiro": {
+    "nome": "Engenheiro",
+    "imageUrl": "https://pbs.twimg.com/media/E53dgdMX0AMbiS-.jpg",
+    "requisitos": "Ataque Especial 12, passar 24 horas construindo seu próprio Braço Mecânico.",
+    "multi": "Pesquisador, Ataque Especial 16.",
+    "descricao": "O Engenheiro passou mais tempo entendendo máquinas do que o Captor comum e, com a compreensão tecnológica, expandindo sua capacidade tecnológica para maquinários maiores que pokébolas.",
+    "periciasClasse": ["Engenharia" , "Programação"],
+    "talentos": [
+      {
+        "nome": "Braço Mecânico",
+        "frequencia": "Constante",
+        "descricao": "você constrói uma prótese mecânica para seu braço direito ou para seu braço esquerdo. Ela adiciona +2 a seu Atributo Ataque. O Braço Mecânico pesa 20 kg, mas possui um sistema acoplador de modo que você não se cansa em carregá-lo."
+      },
+      {
+        "nome": "Radar",
+        "frequencia": "Constante",
+        "descricao": "você legalmente altera sua própria pokéagenda para que ela adquira a função de Radar, ou seja, para que ela não precise ser direcionada para um pokémon para avaliá-lo, achando automaticamente qualquer pokémon que esteja parado dentro do alcance do Radar, mas não os pokémons em movimento. Você pode alterar o alcance do Radar a qualquer momento para qualquer valor de 5 metros a 15 metros."
+      }
+    ]
+  },"ladrão": {
+    "nome": "Ladrão",
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/5cf4cfa4382ac0000123aa1b/c962ef2a-44d4-4054-bf2d-cf58ab2c9cb8/RSA+Thumbnail.jpg",
+    "requisitos": "Sobter um Catador (um dispositivo ilegal usado para roubar pokémons sem necessidade de roubar a pokébola em si dentro da qual ele foi capturado).",
+    "multi": "impossível.",
+    "descricao": "Como outros Captores, Ladrões manipulam a tecnologia atual, principalmente das pokébolas, para aumentar sua coleção de pokémons.",
+    "periciasClasse": ["Manha", "Manipulação"],
+    "talentos": [
+      {
+        "nome": "Aferir Lealdade",
+        "frequencia": ": À Vontade",
+        "descricao": "Um pokémon não selvagem. apontando um Catador a um pokémon, você pode determinar a Lealdade daquele pokémon. A Lealdade é mensurada de 0 a 4. Pokémons com Lealdade 0 odeiam seus donos e/ou são comumente usados para atacar pokémons ou pessoas em situações degradantes ou indefesas. Pokémons com Lealdade 1 foram capturados recentemente, eles eram previamente selvagens e não confiam em seus humanos e/ou são usados para cometer crimes. Um pokémon com Lealdade 2 gosta de seu dono ou foi trocado para um novo dono, mas já era domesticado (não selvagem). Pokémons com Lealdade 3 amam seus donos e/ou foram chocados por eles. Finalmente, pokémons com Lealdade 4 possuam laços inquebráveis com seus donos."
+      },
+      {
+        "nome": "Furto",
+        "frequencia": "Diária",
+        "descricao": "um pokémon não selvagem com Lealdade igual ou menor a 1. você atira uma pokébola usando seu Catador como se o alvo fosse um pokémon selvagem. Você faz todo o processo da rolagem de Captura, e subtrai 5 do resultado do Teste de Captura. O pokémon é completamente desconfiado em relação a você, começando com Lealdade 0, a menos que você o tenha salvado de um perigo iminente (caso em que ele possuirá Lealdade 2)."
+      }
+    ]
+  },"malabarista": {
+    "nome": "Malabarista",
+    "imageUrl": "https://pturpg.wdfiles.com/local--files/juggler/juggler.jpg",
+    "requisitos": "Velocidade 17.",
+    "multi": "Guerreiro, Velocidade 18.",
+    "descricao": "O Malabarista leva sua destreza às ruas para ganhar algum dinheiro.",
+    "periciasClasse": ["Prestidigitação", "Salto"],
+    "talentos": [
+      {
+        "nome": "Arremessador",
+        "frequencia": "Constante",
+        "descricao": "você recebe o Talento Arma de Escolha para todas as armas de arremesso de curto alcance. Você pode arremessar armas de curto alcance e pokébolas a um número de metros adicionais igual a seu MV."
+      },
+      {
+        "nome": "Prestidigitação de Pokébolas",
+        "frequencia": ": Diária. A cada 10 Níveis, receba um uso diário adicional",
+        "descricao": "seu pokémon fica inconsciente ou um oponente envia um pokémon ao combate. você pode retornar um pokémon à pokébola e enviar outro pokémon no lugar como uma Ação Livre. Se for seu turno, você pode usar esta Característica de Classe mesmo que o Gatilho não seja satisfeito."
+      }
+    ]
+  },"pokébolista": {
+    "nome": "Pokébolista",
+    "imageUrl": "https://assets.mycast.io/characters/kurt-2645721-normal.jpg?1621483956",
+    "requisitos": "Criar Pokébola.",
+    "multi": "impossível",
+    "descricao": "Um Especialista em Captura às vezes se concentra no aspecto tecnológico de sua profissão",
+    "periciasClasse": ["Engenharia", "História."],
+    "talentos": [
+      {
+        "nome": "Design Avançado",
+        "frequencia": "Semanal. A cada 5 Níveis, receba um uso semanal adicional.",
+        "descricao": "após quinze minutos de trabalho cansativo (consumindo 20 PV), você cria uma pokébola de um dos tipos a seguir: Curativa, Ligeira, Luxuosa, de Mergulho, de Ninho, de Penumbra, de Repetição, de Teia ou Temporizada."
+      },
+      {
+        "nome": "Vantagem Condicional",
+        "frequencia": "Constante",
+        "descricao": "você arremessa uma pokébola. se você estiver usando uma pokébola que condiciona a subtração de um número da rolagem de captura dentro de determinadas condições e estiver satisfazendo as condições adequadas (por exemplo, se usar uma Pokébola de Penumbra durante a noite), você subtrai também seu MV da rolagem de captura. "
+      }
+    ]
+  },"criador": {
+    "nome": "Criador",
+    "imageUrl": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/05/split-images-of-pokemon-adventure-typhlosion-and-raikou-1.jpg",
+    "requisitos": "Defesa 13, Defesa Especial 13.",
+    "descricao": "Algumas pessoas gostam de cuidar de pokémons desde a tenra idade, particularmente de filhotes, a fim de construir um vínculo com seus mascotes queridos. ",
+    "periciasClasse": ["Concentração", "Empatia", "Força","Incansável", "Jejum","Manipulação", "Percepção","Regeneração"],
+    "talentos": [
+      {
+        "nome": "Cuidado Parental",
+        "frequencia": "Diária",
+        "descricao": "um ovo seu está chocando. adicione metade de seu MD a um Atributo Basal do pokémon que nascer e metade de seu MDE a outro Atributo Basal dele. O bônus concedido a cada Atributo Basal não pode exceder 6."
+      },
+      {
+        "nome": "Fábrica de Ovos",
+        "frequencia": "Constante",
+        "descricao": "você pode fazer até sete Testes de Procriação diários. As chances de sucesso em Testes de Procriação aumentam de 25 para 35 se os dois pokémons não pertencem à mesma família e de 50 para 70 se ambos pertencem à mesma família. Subtraia seu MD ou seu MDE do resultado do Teste de Procriação. É necessário que os pokémons passem apenas seis horas juntos para tentarem procriar, em vez de 8 horas. Analisando um ovo, você pode identificar qual é o pokémon que nascerá."
+      }
+    ]
+  },"botânico": {
+    "nome": "Botânico",
+    "imageUrl": "https://e0.pxfuel.com/wallpapers/45/277/desktop-wallpaper-pokemon-aesthetic-shaymin.jpg",
+    "requisitos": "Defesa Especial 16.",
+    "multi": "Defesa Especial 14, uma das seguintes Classes: Aventureiro, Médium, Observador.",
+    "descricao": "O Botânico é um Criador que encontra alegria não só em criar pokémons, mas também vegetais. ",
+    "periciasClasse": ["Imunidade","Prestidigitação."],
+    "talentos": [
+      {
+        "nome": "Procurar Frutos Curativos",
+        "frequencia": ": Diária. A cada 10 Níveis, receba um uso diário adicional.",
+        "descricao": "um local não urbano. role 1d20 + MDE. Se o resultado for 15 ou mais, você encontra uma Fruta. Para determinar qual fruta, role 1d10 e consulte a tabela abaixo: {1 Cereja (Cheri),2 Castanha (Chesto),3 Pêssego (Pecha),4 Morango (Rawst),5 Pera (Aspear),6 Maçã (Leppa),7 Laranja (Oran),8 Caqui (Persim),9 Ameixa (Lum),10 Toranja (Sitrus)"
+      },
+      {
+        "nome": "Semeador",
+        "frequencia": "Constante",
+        "descricao": "você carrega consigo um vaso portátil usado como uma pequena horta para plantar e produzir plantas, que podem gerar Frutas ou Abricós. Ao plantar uma Fruta ou um Abricó em sua Horta, role 1d4 +1. A planta germinará e frutificará em um número de dias igual ao resultado. Quando pronta para colher, role 1d4 para determinar quantas Frutas ou Abricós são produzidos por aquela planta. Você pode ter crescendo em sua Horta portátil até duas plantas simultaneamente. Você não pode trocar qual a planta que está crescendo antes de colher suas Frutas ou seus Abricós abrindo espaço na terra para outro semeio. A Horta portátil pode ser feita dos materiais que você preferir, mas pesa 7 kg e possui as seguintes dimensões: 45 centímetros por 30 centímetros por 15 centímetros, tornando impossível carregar mais de uma consigo. "
+      }
+    ]
+  },"cozinheiro": {
+    "nome": "Cozinheiro",
+    "imageUrl": "https://pbs.twimg.com/profile_images/1622036747755331584/lBxXgJk9_400x400.jpg",
+    "requisitos": "Defesa Especial 16.",
+    "multi": "Defesa Especial 18.",
+    "descricao": "O Cozinheiro é um ótimo amigo para se ter. Ele é um talentoso mestre da culinária.",
+    "periciasClasse": ["Incansável","Prestidigitação."],
+    "talentos": [
+      {
+        "nome": "Alimento da Alma",
+        "frequencia": "À Vontade.",
+        "descricao": "um pokémon.após cozinhar por trinta minutos (com ingredientes e equipamento adequado), você cria um Prato que serve até dez criaturas (pessoas ou pokémons). Pokémons que se alimentem desta comida ficam muito felizes, portanto não perderão lealdade se consumirem Ervas logo antes ou logo depois."
+      },
+      {
+        "nome": "Explosão de Energia",
+        "frequencia": "Diária",
+        "descricao": "após cozinhar por quinze minutos (com ingredientes e equipamento adequado), você cria uma Bebida Energética que provê Pontos de Vida temporários em quantidade igual ao quíntuplo de seu MD. Pontos de Vida temporários desaparecem após um encontro ou ao serem consumidos (eles são consumidos antes dos Pontos de Vida normais quando se sofre dano)."
+      }
+    ]
+  },"cuidador": {
+    "nome": "Cuidador",
+    "imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season18/season18_ep38_ss01.jpg",
+    "requisitos": "1 prêmio em Concurso.",
+    "multi": "Artista, Defesa 14, 2 prêmios em Concursos.",
+    "descricao": "iadores com interesse em particular em cuidados com os pokémons, especialmente se isto envolve preparar estes pokémons para Concursos. ",
+    "periciasClasse": ["Empatia","Regeneração."],
+    "talentos": [
+      {
+        "nome": "Fã em Ascensão",
+        "frequencia": "Constante",
+        "descricao": ": Seus pokémons podem ter até 15 em qualquer Aptidão. Quando participando em um Concurso, você pode Apelar a um Ponto de Aptidão extra quando poderia Apelar à sua Aptidão."
+      },
+      {
+        "nome": "Mimo",
+        "frequencia": "Diária. A cada 10 Níveis, receba um uso diário adicional.",
+        "descricao": "um pokémon.após dez minutos preparando a aparência e o maneirismo do alvo, ele estará com lealdade completa temporariamente e chamará mais atenção. Se ele subir de Nível sem nenhum incidente negativo dentro de dez minutos após esta preparação e possuir todos os outros requisitos para evolução, o requisito de Lealdade será suprido e ele poderá evoluir, mesmo que a Lealdade dele retorne ao valor padrão depois (a Lealdade retorna ao padrão após uma hora). O uso repetido deste Talento gradualmente eleva a Lealdade padrão do pokémon. Além disso, Mimo também restaura Confusão, Paralisia e Queimadura."
+      }
+    ]
+  },"evolucionista": {
+    "nome": "Evolucionista",
+    "imageUrl": "https://comicbook.com/wp-content/uploads/sites/4/2021/09/d2f63521-5537-4e8a-9b83-0f912243fbe9.jpg?w=1024",
+    "requisitos": "Mega!",
+    "multi": "impossível",
+    "descricao": "Alguns Criadores sabem intuitivamente que motivação um pokémon precisa para evoluir, mesmo abaixo da expectativa.",
+    "periciasClasse": ["Força", "Intimidação"],
+    "talentos": [
+      {
+        "nome": "Escultor de Megapedras",
+        "frequencia": "Mensal",
+        "descricao": "um pokémon seu totalmente evoluído com lealdade pelo menos 2.após quinze horas de foco e trabalho conjunto com o alvo, você cria uma Megapedra para uso exclusivo no alvo. Esta Megapedra exclusiva permite que o alvo acesse uma megaevolução única, não idêntica a uma megaevolução descrita (o pokémon nem precisa ter uma megaevolução descrita). Quando o pokémon megaevolui usando esta Megapedra, você adiciona 10 pontos aos Atributos Basais dele, mas nenhum Atributo Basal pode receber mais do que +4. A Saúde do pokémon não pode receber nenhum bônus e nenhum Atributo Basal pode ser reduzido. Discuta com seu Narrador como a megaevolução particular afeta o Tipo e a Habilidade de seu pokémon."
+      },
+      {
+        "nome": "Evolução Precoce",
+        "frequencia": "Constante",
+        "descricao": "Subtraia seu MD do Nível mínimo necessário que um pokémon precisa atingir para evoluir. Outros requerimentos de evolução não são afetados por esta Característica de Classe."
+      }
+    ]
+  },"incubador": {
+    "nome": "Incubador",
+    "imageUrl": "https://i.pinimg.com/736x/0a/55/07/0a5507ca2be1fa9ee32b5088768e4e21.jpg",
+    "requisitos": "Chocadeira, ter chocado dois ovos",
+    "multi": "impossível",
+    "descricao": "Um Incubador tem muito orgulho nos ovos de seus pokémons. Ele pratica o cuidado com os ovos de uma maneira incomparável",
+    "periciasClasse": ["Incansável", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Assim que se Faz!",
+        "frequencia": "Constante",
+        "descricao": "um pokémon que você chocou, a até 20 metros de um de seus progenitores.: quando o progenitor ganha Pontos de Experiência, ele pode transferir metade dos pontos de experiência que receberia para o alvo. Se ambos os progenitores receberem pontos de experiência simultaneamente, apenas um pode transferir para o alvo."
+      },
+      {
+        "nome": "Vantagem da Ascendência",
+        "frequencia": "Diária",
+        "descricao": "um ovo seu está chocando.o pokémon que nascer saberá um número de Golpes Herdados igual a seu MDE. Os Golpes Herdados deverão constar na lista de Golpes de seus progenitores que podem ser aprendidos subindo de Nível naturalmente ou por Tutor. Você não escolhe quais os Golpes que serão passados adiante ao pokémon, eles são determinados aleatoriamente. Se seu MDE é maior do que o número de Golpes aplicáveis, ele aprende todos os possíveis."
+      }
+    ]
+  },"médico": {
+    "nome": "Médico",
+    "imageUrl": "https://bracketfights.com/images/templates/2019/99452/pokegirls-99452/doctorftcgpng.png",
+    "requisitos": "Defesa 14, Socorrista.",
+    "multi": "Defesa Especial 18, Socorrista. Um Ranger com Defesa 14 e Defesa Especial 14 também se qualifica.",
+    "descricao": "Todos recorrem aos Médicos. Eles trabalham em hospitais, em Centros Pokémon e basicamente em qualquer lugar para socorrer feridos.",
+    "periciasClasse": ["Manipulação", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Relaxantes Musculares",
+        "frequencia": "Diária. A cada 5 Níveis, receba um uso diário adicional.",
+        "descricao": "um pokémon ou um humano Paralisado. restaura a Paralisia."
+      },
+      {
+        "nome": "Tratar Ferimentos Mínimos",
+        "frequencia": "Diária. A cada 7 Níveis, receba um uso diário adicional.",
+        "descricao": "um pokémon ou um humano.o alvo recupera 20 Pontos de Vida."
+      }
+    ]
+  },"tutor": {
+    "nome": "Tutor",
+    "imageUrl": "https://pbs.twimg.com/media/EJBZNxfU8AIf2cb.jpg",
+    "requisitos": "ter usado pelo menos cinco Registros.",
+    "multi": "ter usado pelo menos cinco Registros e ser membro de uma Classe. Diferentes Classes só podem se tornar Tutores se possuírem alguns outros requisitos, conforme {Cientista: Defesa Especial 16,Fotógrafo: Defesa Especial 16,Registro Fotográfico,Guia: Defesa Especial 18}",
+    "descricao": "Criar um pokémon e deixar as coisas acontecerem naturalmente não é suficiente ao Tutor. Estes Criadores imprimem conhecimentos a seus pokémons na forma de truques aos quais outros de sua espécie não podem recorrer.",
+    "periciasClasse": ["História","Manha."],
+    "talentos": [
+      {
+        "nome": "Introjeção",
+        "frequencia": "Constante",
+        "descricao": "um de seus pokémons aprende um Golpe por Registro ou Tutor.você pode posicionar o Golpe aprendido na lista de Golpes que são aprendidos por aquele pokémon naturalmente subindo de Nível. Isso só pode ser feito até duas vezes por pokémon."
+      },
+      {
+        "nome": "Tutorial",
+        "frequencia": "Diária. A cada 10 Níveis, receba um uso diário adicional",
+        "descricao": "um pokémon.após quinze minutos treinando e instruindo o alvo, role 1d20 + MDE. Se o resultado for 16 ou mais, escolha um Golpe que ele pode aprender a partir de um Tutor. O alvo aprende este Golpe. Uma vez que tenha usado esta Característica de Classe em um pokémon, ela jamais poderá ser usada novamente para aquele pokémon. Este Talento consome dois Pontos de Tutoria."
+      }
+    ]
+  },"guerreiro": {
+    "nome": "Guerreiro",
+    "imageUrl": "https://pm1.aminoapps.com/7513/73aa33ed48bc7a24336815730bc9c6560f85a60ar1-500-500v2_00.jpg",
+    "requisitos": "Ataque 13, Defesa 13",
+    "descricao": "Guerreiros são combatentes físicos excepcionais, superando até mesmo alguns pokémons. Especialistas em combate direto, têm afinidade com pokémons dos Tipos Metal, Terra, Pedra e Lutador, treinando-os para explorar todo seu potencial. Resistentes e disciplinados, ganham o respeito de seus pokémons ao demonstrar habilidades equivalentes às deles em batalha.",
+    "periciasClasse": ["Apneia", "Corrida", "Deflexão", "Força", "Incansável", "Intimidação", "Resiliência", "Salto"],
+    "talentos": [
+      {
+        "nome": "Foco Combativo",
+        "frequencia": "Constante",
+        "descricao": "Adicione seus MA e MD às rolagens de dano causado por você."
+      },
+      {
+        "nome": "Resistência Marcial",
+        "frequencia": "Constante",
+        "descricao": "Some as metades de seus MA e MD, multiplique por 5 e adicione o resultado aos seus PV máximos."
+      }
+    ]
+  },"artista_marcial": {
+    "nome": "Artista Marcial",
+    "imageUrl": "https://pbs.twimg.com/media/GDH0ZbAWEAAKEMx?format=jpg&name=large",
+    "requisitos": "Ataque 16, Defesa 15, Arma de Escolha para Ataque Desarmado",
+    "multi": "Impossível",
+    "descricao": "Especialistas em combate desarmado, os Artistas Marciais superam até pokémons em força bruta e disciplina. Dominam técnicas que transformam seu corpo em arma letal, combinando proezas físicas com conhecimento de artes marciais específicas.",
+    "periciasClasse": ["Concentração", "Força"],
+    "talentos": [
+      {
+        "nome": "Corpo a Corpo",
+        "frequencia": "Diária",
+        "descricao": "Use o Golpe Corpo a Corpo."
+      },
+      {
+        "nome": "Sensei",
+        "frequencia": "Constante",
+        "descricao": "Domine uma arte marcial específica: ataques desarmados têm Dificuldade de Acurácia 2 e podem causar dano Normal ou Lutador."
+      }
+    ]
+  },"atleta": {
+    "nome": "Atleta",
+    "imageUrl": "https://i.pinimg.com/736x/0a/90/40/0a9040812ead5a987f20eaf35985dd37.jpg",
+    "requisitos": "Ataque 16",
+    "multi": "Parrudo e Ataque 16, ou Soldado com Ataque 18",
+    "descricao": "Atletas alcançam o ápice físico humano, usando treinamento rigoroso para aprimorar a si mesmos e seus aliados. Destacam-se em trabalho em equipe e superação de limites corporais.",
+    "periciasClasse": ["Acrobacia", "Corrida"],
+    "talentos": [
+      {
+        "nome": "Porradaria",
+        "frequencia": "Diária (ganha +1 uso a cada 5 Níveis)",
+        "descricao": "Use o Golpe Porrada. Se acertar, o próximo aliado ignora a Evasão do alvo."
+      },
+      {
+        "nome": "Rapidez",
+        "frequencia": "Diária (ganha +1 uso a cada 5 Níveis)",
+        "descricao": "Adicione seu MA aos deslocamentos Terrestre, Natação e Subaquático até o fim da rodada."
+      }
+    ]
+  },"augure": {
+    "nome": "Áugure",
+    "imageUrl": "https://pm1.aminoapps.com/6339/b8651202d35f63e2549088159723ec0c2a13ce4d_00.jpg",
+    "requisitos": "Ataque 16, um pokémon com Capacidade Aura",
+    "multi": "O Escolhido, Ataque 18 e um pokémon com Capacidade Aura",
+    "descricao": "Mestres em manipular a aura, leem emoções e intenções através de cores energéticas. Emitem explosões de força e protegem-se com campos de energia, conectando-se profundamente com o mundo ao redor.",
+    "periciasClasse": ["Imunidade", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Leitura de Auras",
+        "frequencia": "Constante",
+        "descricao": "Leia auras para detectar emoções (cores vívidas) ou más intenções (cores escuras). Sua aura também pode ser projetada visivelmente."
+      },
+      {
+        "nome": "Onda de Vácuo",
+        "frequencia": "Diária (ganha +1 uso a cada 6 Níveis)",
+        "descricao": "Use o Golpe Onda de Vácuo, usando Ataque em vez de Ataque Especial para o dano."
+      }
+    ]
+  },"bandido": {
+    "nome": "Bandido",
+    "imageUrl": "https://cdn.donmai.us/original/cf/52/cf521b7a0f378d322902c9c68d68bbf7.jpg",
+    "requisitos": "Ataque 15",
+    "multi": "Ladrão e Ataque 16",
+    "descricao": "Especialistas em táticas desleais, os Bandidos priorizam a vitória acima de tudo. Usam truques, armas ocultas e golpes sorrateiros para superar adversários mais poderosos.",
+    "periciasClasse": ["Manha", "Prestidigitação"],
+    "talentos": [
+      {
+        "nome": "Ludibriar",
+        "frequencia": "Constante",
+        "descricao": "Use um Golpe de Adulação, Bravata ou Provocação (limitado a uma vez por alvo por combate)."
+      },
+      {
+        "nome": "Psique",
+        "frequencia": "Diária (ganha +1 uso a cada 8 Níveis)",
+        "descricao": "Use o Golpe Pelas Costas."
+      }
+    ]
+  },"monge": {
+    "nome": "Monge",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-kRjPNNFT0fq_xzYLGm4Lp-JKouss_pTv1OB5sR2iG44qHcbd_or49h-nsCqfZv_QXI&usqp=CAU",
+    "requisitos": "Defesa 14",
+    "multi": "Cuidador e Velocidade 18",
+    "descricao": "Monges dominam a energia interna para curar aliados ou atordoar inimigos. Conhecem pontos de pressão humanos e pokémon, usando meditação para induzir evoluções temporárias.",
+    "periciasClasse": ["Empatia", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Ataque Atordoante",
+        "frequencia": "Diária (ganha +1 uso a cada 10 Níveis)",
+        "descricao": "Ao acertar um ataque desarmado, deixe o alvo Atordoado (uma vez por combate por alvo)."
+      },
+      {
+        "nome": "Ioga",
+        "frequencia": "À Vontade",
+        "descricao": "Após 5 minutos de meditação, um pokémon ganha Lealdade total temporariamente para evoluir."
+      }
+    ]
+  },"ninja": {
+    "nome": "Ninja",
+    "imageUrl": "https://i-ogp.pximg.net/c/540x540_70/img-master/img/2019/05/25/17/29/06/74895659_p0_square1200.jpg",
+    "requisitos": "Ataque 16",
+    "multi": "Especialista em pokémons Venenosos e Velocidade 16, ou Malabarista com Velocidade 18",
+    "descricao": "Ninjas combinam agilidade, venenos e furtividade para neutralizar ameaças. Movem-se silenciosamente, escalam superfícies verticais e usam toxinas para enfraquecer oponentes.",
+    "periciasClasse": ["Acrobacia", "Furtividade"],
+    "talentos": [
+      {
+        "nome": "Envenenamento",
+        "frequencia": "Diária (ganha +1 uso a cada 10 Níveis)",
+        "descricao": "Use o Golpe Pó Venenoso como ataque Corpo a Corpo sem o Descritor Explosão."
+      },
+      {
+        "nome": "Vivacidade",
+        "frequencia": "Constante",
+        "descricao": "Adicione metade do MA à Velocidade e deslocamentos. Corra em superfícies verticais (até MA metros) e mova-se silenciosamente."
+      }
+    ]
+  },"soldado": {
+    "nome": "Soldado",
+    "imageUrl": "https://pturpg.wdfiles.com/local--files/104:soldier/soldier.jpg",
+    "requisitos": "Ataque 16 e Arma de Escolha",
+    "multi": "Ataque 18 e Arma de Escolha",
+    "descricao": "Especialistas em armas, Soldados são temidos no campo de batalha. Dominam sua arma de escolha com precisão cirúrgica e golpes devastadores.",
+    "periciasClasse": ["Deflexão", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Armado",
+        "frequencia": "Constante",
+        "descricao": "Ataques com Arma de Escolha têm Dificuldade de Acurácia 2 (não se aplica a ataques desarmados)."
+      },
+      {
+        "nome": "Ataque Poderoso",
+        "frequencia": "Diária (ganha +1 uso a cada 10 Níveis)",
+        "descricao": "Aumente a Categoria de Dano Basal da arma em 2 ao acertar um ataque."
+      }
+    ]
+  },"mistico": {
+    "nome": "Místico",
+    "imageUrl": "https://i.redd.it/zinnia-from-pokemon-oras-v0-jrazmi8919bc1.jpg?width=1492&format=pjpg&auto=webp&s=48a37b4291dfd163575187f799a8e9bb021e3d48",
+    "requisitos": "Saúde 13, Defesa 13",
+    "multi": "Ataque 18 e Arma de Escolha",
+    "descricao": "Conectado à natureza e pokémons em nível primordial, o Místico canaliza criaturas para rituais místicos. Atua como elo espiritual entre humanos e pokémons antigos, mantendo-se afastado do caos urbano.",
+    "periciasClasse": ["Concentração", "Deflexão", "Furtividade", "História", "Imunidade", "Jejum", "Regeneração", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Canalizar",
+        "frequencia": "À Vontade",
+        "descricao": "Faça um Teste de Captura modificado para controlar um pokémon. Comunicação telepática e acesso às memórias/habilidades do alvo. Custa 10 PV."
+      },
+      {
+        "nome": "Permissão",
+        "frequencia": "Diária",
+        "descricao": "Use um Golpe do pokémon canalizado uma vez dentro de 24h."
+      }
+    ]
+  },"bardo": {
+    "nome": "Bardo",
+    "imageUrl": "https://i.quotev.com/ss2c2i3qaaaa.jpg",
+    "requisitos": "Aliado a um Lendário",
+    "multi": "Saúde 16, Defesa 16 e aliado a um Lendário",
+    "descricao": "Arauto musical de pokémons Lendários, usa melodias para canalizar milagres divinos. Requer sincronia com instrumentos e treinamento de pokémons inteligentes.",
+    "periciasClasse": ["Apneia", "Performance"],
+    "talentos": [
+      {
+        "nome": "Balada",
+        "frequencia": "À Vontade",
+        "descricao": "Após 3 rodadas cantando, use o Golpe Canção."
+      },
+      {
+        "nome": "Melodia",
+        "frequencia": "Diária",
+        "descricao": "Cure 100 PV de um Lendário visível."
+      }
+    ]
+  },"guardiao": {
+    "nome": "Guardião",
+    "imageUrl": "https://www.gamespot.com/a/uploads/scale_small_plus/mig/6/3/4/1/2116341-169_pokemonconquest_intro_ot_ds_040512.jpg",
+    "requisitos": "Ter usado Permissão para Tela de Luz",
+    "multi": "Áugure, Saúde 15 e pokémon com Refletor/Tela de Luz, ou Inquebrável (Defesa 16) com pokémon requisitado",
+    "descricao": "Protetor místico que ergue barreiras mágicas. Usa força vital para defender aliados e punir agressores com energia refletida.",
+    "periciasClasse": ["Deflexão", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Refletor",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Use Golpe Refletor como Terreno Bloqueador."
+      },
+      {
+        "nome": "Tela de Luz",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Use Golpe Tela de Luz como Terreno Bloqueador."
+      }
+    ]
+  },"ilusionista": {
+    "nome": "Ilusionista",
+    "imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/watch-pokemon-tv/seasons/season16/season16_ep30_ss04.jpg",
+    "requisitos": "Defesa 16, Misticismo",
+    "multi": "Impossível",
+    "descricao": "Mestre em ilusões corporais, copia aparências e talentos alheios. Suas imitações são perfeitas, mas auras revelam a verdade.",
+    "periciasClasse": ["Investigação", "Manipulação"],
+    "talentos": [
+      {
+        "nome": "Imitação",
+        "frequencia": "À Vontade",
+        "descricao": "Role 1d20 + MD para copiar forma/comportamento de um humano. Custa 10 PV."
+      },
+      {
+        "nome": "Indiscernível",
+        "frequencia": "Diária",
+        "descricao": "Copie um Talento do alvo imitado por 24h."
+      }
+    ]
+  },"medium": {
+    "nome": "Médium",
+    "imageUrl": "https://preview.redd.it/you-are-challenged-by-hex-maniac-anina-v0-4ofbztnj7wea1.jpg?auto=webp&s=cc39088aad1d7203f0ebdb0bb4e520a016277413",
+    "requisitos": "Ter usado Permissão em 3 Golpes de Fase",
+    "multi": "Impossível",
+    "descricao": "Canalizador de energias extremas, transfere fases positivas para pokémons. Especialista em Acupuntura para manipulação corporal.",
+    "periciasClasse": ["Concentração", "Imunidade"],
+    "talentos": [
+      {
+        "nome": "Acupunturista",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Use Golpe Acupuntura."
+      },
+      {
+        "nome": "Empoderamento",
+        "frequencia": "À Vontade",
+        "descricao": "Transfere suas Fases positivas para um pokémon. Custa 10 PV."
+      }
+    ]
+  },"orador": {
+    "nome": "Orador",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTc3Y2EzMDQtZWM1Yi00ZWYzLWJiNDYtNGMwNDBmMWUyYWU3XkEyXkFqcGc@._V1_.jpg",
+    "requisitos": "Ter canalizado/possuído um Lendário",
+    "multi": "Impossível",
+    "descricao": "Canalizador divino que usa PV de Lendários para golpes devastadores. Risco de revolta divina se abusar do poder.",
+    "periciasClasse": ["Incansável", "Intimidação"],
+    "talentos": [
+      {
+        "nome": "Visão dos Deuses",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Veja através de Lendários canalizados e localize-os."
+      },
+      {
+        "nome": "Voz dos Deuses",
+        "frequencia": "Diária",
+        "descricao": "Use Golpe Vozeirão drenando 100 PV de cada Lendário aliado (+2d10 de dano por 100 PV)."
+      }
+    ]
+  },"runico": {
+    "nome": "Rúnico",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjVhMjIxNzAtZDg3My00MjZmLThjNDMtNGJhMjI5NDNiMzVhXkEyXkFqcGc@._V1_.jpg",
+    "requisitos": "Ter canalizado/possuído Unown",
+    "multi": "5 Unown + Observador/Ocultista/Petrologista",
+    "descricao": "Manipulador de Unown que distorce a realidade através de runas. Cria palavras mágicas combinando letras vivas para efeitos únicos.",
+    "periciasClasse": ["Investigação", "Manipulação"],
+    "talentos": [
+      {
+        "nome": "Convocação",
+        "frequencia": "Diária",
+        "descricao": "Invoca um Unown aleatório (escolha a letra em rolagem crítica)."
+      },
+      {
+        "nome": "Soletrar",
+        "frequencia": "À Vontade",
+        "descricao": "Combine até 6 Unown em uma palavra, definindo atributos/golpes permanentemente."
+      }
+    ]
+  },"xama": {
+    "nome": "Xamã",
+    "imageUrl": "https://artfiles.alphacoders.com/153/thumb-153147.png",
+    "requisitos": "Grunhidos/Piados e Defesa Especial < 10",
+    "multi": "Impossível",
+    "descricao": "Possuidor de corpos pokémon que deixa seu corpo humano vulnerável. Domina técnicas de empréstimo de habilidades após possessões arriscadas.",
+    "periciasClasse": ["Jejum", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Empréstimo",
+        "frequencia": "Diária",
+        "descricao": "Use um Golpe do pokémon possuído por 24h após deixar seu corpo."
+      },
+      {
+        "nome": "Possessão",
+        "frequencia": "À Vontade",
+        "descricao": "Controle um pokémon com Teste de Captura modificado. Risco de morte se o alvo morrer. Custa 35 PV."
+      }
+    ]
+  },"pesquisador": {
+    "nome": "Pesquisador",
+    "imageUrl": "https://pbs.twimg.com/media/EZgDabhXsAATM2J.jpg:large",
+    "requisitos": "Ataque Especial 13, Defesa Especial 13",
+    "descricao": "Erudito com vasto conhecimento científico e habilidades analíticas. Especialista em analisar pokémons e resolver problemas através do intelecto.",
+    "periciasClasse": ["Concentração", "Empatia", "Engenharia", "História", "Investigação", "Manha", "Percepção", "Programação"],
+    "talentos": [
+      {
+        "nome": "Estudo Comportamental",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Role 1d20 + MAE + MDE para descobrir Nível ou PV de um pokémon (16+ para nível, 21+ para PV)."
+      },
+      {
+        "nome": "Enciclopédia",
+        "frequencia": "Constante",
+        "descricao": "Saiba Tipo, Golpes, evoluções, Habilidades e dados biográficos de pokémons registrados."
+      }
+    ]
+  },"cientista": {
+    "nome": "Cientista",
+    "imageUrl": "https://i.pinimg.com/736x/7e/45/7b/7e457bb119c829892fc82743d7c760b0.jpg",
+    "requisitos": "Química",
+    "multi": "Cozinheiro/Nerd e Ataque Especial 14",
+    "descricao": "Alquimista que sintetiza itens químicos como poções e repelentes. Mistura materiais para criar soluções inovadoras.",
+    "periciasClasse": ["Engenharia", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Poções",
+        "frequencia": "Diária",
+        "descricao": "Crie Poções (1h), Superpoções (2h) ou Hiperpoções (4h) através de trabalho químico."
+      },
+      {
+        "nome": "Repelentes",
+        "frequencia": "Diária",
+        "descricao": "Fabrique Repelentes (1h), Super-repelentes (2h) ou Repelente Máximo (4h)."
+      }
+    ]
+  },"fotografo": {
+    "nome": "Fotógrafo",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7GHUJXmID8rGRtLYXZb3NH9zGLEcbjmh72PkhK3GMUZY9R0_OYpooARnr7Ufh57gkNMTDQcXckDlm-_NcZsNow0-jGtMW_WctPfCbaXuxxs0fGp0L_GdGtYBg953kAyzdMq9fyZMY-Vc/s1600/184996-todd_snap.png",
+    "requisitos": "Defesa Especial 15 e câmera de 2000 créditos",
+    "multi": "Defesa Especial 18 e câmera de 2000 créditos",
+    "descricao": "Documentarista que monetiza momentos raros. Captura comportamentos selvagens e golpes espetaculares para estudo/venda.",
+    "periciasClasse": ["Concentração", "Furtividade"],
+    "talentos": [
+      {
+        "nome": "Arte Fotográfica",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Tire fotos valendo 20x o resultado de 1d20 + MDE."
+      },
+      {
+        "nome": "Fotografia Rara",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Capture golpes em ação: fotos valem 30x o resultado (16+ para sucesso)."
+      }
+    ]
+  },"hipnologo": {
+    "nome": "Hipnólogo",
+    "imageUrl": "https://images5.fanpop.com/image/photos/26600000/Professor-Fennel-Curtsy-pokemon-26622446-585-950.jpg",
+    "requisitos": "Defesa Especial 16 e pokémon com Onirismo",
+    "multi": "Impossível",
+    "descricao": "Estudioso dos sonhos que usa tecnologia para materializar desejos subconscientes de pokémons adormecidos.",
+    "periciasClasse": ["Engenharia", "Programação"],
+    "talentos": [
+      {
+        "nome": "Máquina dos Sonhos",
+        "frequencia": "Constante",
+        "descricao": "Observe sonhos de pokémons dormindo (até 8h). Limite: 1 uso a cada 3 dias por pokémon."
+      },
+      {
+        "nome": "Materialização Onírica",
+        "frequencia": "À Vontade",
+        "descricao": "Role 1d20 + MDE (18+) para trazer ao mundo real um item que o pokémon sonhou."
+      }
+    ]
+  },"observador": {
+    "nome": "Observador",
+    "imageUrl": "https://cdn.donmai.us/original/54/82/5482c14da910605f9fcb8bf61a93172c.jpg",
+    "requisitos": "Defesa Especial 15",
+    "multi": "Defesa Especial 18 e Kit de Desenho/Escrita",
+    "descricao": "Rastreador de habitats e comportamentos. Especialista em localizar pokémons raros e recursos naturais.",
+    "periciasClasse": ["Furtividade", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Busca pela Família",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Role 1d20 + MAE + MDE para rastrear espécies relacionadas (16+) ou recursos (21+)."
+      },
+      {
+        "nome": "Ver de Perto",
+        "frequencia": "Diária (+1 uso a cada 3 Níveis)",
+        "descricao": "Fique invisível a 3xMDE metros de um pokémon selvagem."
+      }
+    ]
+  },"ocultista": {
+    "nome": "Ocultista",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVhOnEymxXPnn9qJ660NhBhYDCb7ESiuE_g&s",
+    "requisitos": "Ter encontrado um Lendário",
+    "multi": "Defesa Especial 16, 2 Lendários e Classe Mística/Pactuária",
+    "descricao": "Caçador de mitos que busca provar a existência de Lendários. Usa conhecimento teológico para influenciá-los.",
+    "periciasClasse": ["Empatia", "História"],
+    "talentos": [
+      {
+        "nome": "Exaltação",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Role 1d20 + MAE + MDE (16+) para fazer um Lendário hesitar em atacá-lo."
+      },
+      {
+        "nome": "Mitologia",
+        "frequencia": "Constante",
+        "descricao": "Conheça dados completos de Lendários já encontrados."
+      }
+    ]
+  },"petrologista": {
+    "nome": "Petrologista",
+    "imageUrl": "https://i.pinimg.com/736x/2b/c9/7e/2bc97ef2b52a8944d0ed642964bba256.jpg",
+    "requisitos": "Ataque Especial 15 e kit de escavação de 1250 créditos",
+    "multi": "Ataque Especial 16, kit de escavação e Classe Domador/Rúnico",
+    "descricao": "Geólogo especializado em Pedras Elementais e fósseis. Explora cavernas para desenterrar segredos antigos.",
+    "periciasClasse": ["Força", "Investigação"],
+    "talentos": [
+      {
+        "nome": "Arqueologia",
+        "frequencia": "Diária",
+        "descricao": "Role 1d20 + MAE (16+: pistas fósseis; 21+: escolha entre fóssil ou informação)."
+      },
+      {
+        "nome": "Procurar Pedras",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Role 1d20 + MAE (21+) para encontrar Pedras Elementais."
+      }
+    ]
+  },"professor": {
+    "nome": "Professor",
+    "imageUrl": "https://imgix.ranker.com/user_node_img/3683/73645741/original/73645741-photo-u2065045985?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=355",
+    "requisitos": "Ataque Especial 20",
+    "multi": "Impossível",
+    "descricao": "Sábio com conhecimento enciclopédico absoluto. Analisa pokémons com precisão científica irrefutável.",
+    "periciasClasse": ["Manipulação", "Performance"],
+    "talentos": [
+      {
+        "nome": "Classificação Infalível",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Role 1d20 + MAE + MDE para identificar atributos extremos (16+: maior/menor; 21+: valores exatos)."
+      },
+      {
+        "nome": "Enciclopédia +",
+        "frequencia": "Constante",
+        "descricao": "Acesse dados completos de qualquer pokémon não-Lendário como um Narrador."
+      }
+    ]
+  },"psiquico": {
+    "nome": "Psíquico",
+    "imageUrl": "https://www.nightwater.email/content/images/size/w600/2024/01/psychic-control-1.jpeg",
+    "requisitos": "Saúde 13, Ataque Especial 13",
+    "descricao": "Manipuladores de energia mental com afinidade natural por pokémons Psíquicos. Movem objetos com a mente, comunicam-se telepaticamente e deixam resíduos energéticos identificáveis.",
+    "periciasClasse": ["Deflexão", "Furtividade", "História", "Imunidade", "Investigação", "Regeneração", "Resiliência", "Salto"],
+    "talentos": [
+      {
+        "nome": "Psicocinese",
+        "frequencia": "À Vontade",
+        "descricao": "Mova objetos (até 5x MAE kg) até 3x MAE metros. Campo visual obrigatório."
+      },
+      {
+        "nome": "Telepatia",
+        "frequencia": "À Vontade",
+        "descricao": "Leia/projete pensamentos superficiais (humanos/pokémons). Deixa resíduo psíquico."
+      }
+    ]
+  },"ardente": {
+    "nome": "Ardente",
+    "imageUrl": "https://cdn.donmai.us/original/30/c2/30c2a312c1335dffca4e4773a9df6017.jpg",
+    "requisitos": "2 pokémons dos Tipos Fantasma/Fogo/Trevas",
+    "multi": "Saúde 16, Ataque Especial 16 e Especialista em Fantasma/Fogo/Trevas",
+    "descricao": "Piromantes que controlam chamas e luz. Criam ilusões luminosas e manipulam fogo à distância, dominando ambientes com combustão psíquica.",
+    "periciasClasse": ["Imunidade", "Intimidação"],
+    "talentos": [
+      {
+        "nome": "Controle de Fogo",
+        "frequencia": "À Vontade",
+        "descricao": "Redirecione chamas ou crie fogo do ar (alcance: 5x MAE metros). MAE mínimo 1."
+      },
+      {
+        "nome": "Controle de Luz",
+        "frequencia": "À Vontade",
+        "descricao": "Altere iluminação em área de 5x MAE metros (clarear/escurecer). MAE mínimo 1."
+      }
+    ]
+  },"bruxo": {
+    "nome": "Bruxo",
+    "imageUrl": "https://i.pinimg.com/474x/c0/8c/f9/c08cf9d9a7ef1dba89c6e15617e61737.jpg",
+    "requisitos": "Ataque Especial 18",
+    "multi": "Impossível",
+    "descricao": "Manipuladores de pesadelos que implantam tormentos mentais. Especialistas em ataques sutis e maldições psíquicas indetectáveis.",
+    "periciasClasse": ["Furtividade", "Investigação"],
+    "talentos": [
+      {
+        "nome": "Ofuscar",
+        "frequencia": "À Vontade",
+        "descricao": "Use Golpe Ofuscar (deixa resíduo psíquico). Custa 15 PV."
+      },
+      {
+        "nome": "Sugestão",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Implante ideias em alvos (1d20 + MAE ≥20). A sugestão parece genuína ao alvo."
+      }
+    ]
+  },"celio": {
+    "nome": "Célio",
+    "imageUrl": "https://assets.mycast.io/actor_images/actor-olympia-pokemon-405938_large.jpg?1649895922",
+    "requisitos": "2 pokémons dos Tipos Elétrico/Voador",
+    "multi": "Saúde 16, Ataque Especial 16 e Especialista em Elétrico/Voador",
+    "descricao": "Mestres do clima que comandam ventos e relâmpagos. Criadores de campos elétricos e tempestades, com habilidades para voo e controle atmosférico.",
+    "periciasClasse": ["Acrobacia", "Salto"],
+    "talentos": [
+      {
+        "nome": "Controle de Ar",
+        "frequencia": "À Vontade",
+        "descricao": "Gere ventos de até 5x MAE km/h (alcance: 3x MAE metros). MAE mínimo 1."
+      },
+      {
+        "nome": "Controle de Eletricidade",
+        "frequencia": "À Vontade",
+        "descricao": "Redirecione/crie eletricidade (alcance: 5x MAE metros). MAE mínimo 1."
+      }
+    ]
+  },"empatico": {
+    "nome": "Empático",
+    "imageUrl": "https://i.pinimg.com/736x/5f/5d/60/5f5d60d6220e8fb59e2d5bd703b9ea72.jpg",
+    "requisitos": "1 pokémon com +25 Níveis conquistados com você",
+    "multi": "Místico/Observador + Ataque Especial 16 + pokémon com +25 Níveis",
+    "descricao": "Curadores emocionais que sincronizam com mentes alheias. Aliviam sofrimentos físicos e mentais, criando laços profundos com pokémons.",
+    "periciasClasse": ["Empatia", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Cura Menor",
+        "frequencia": "Diária (+1 uso a cada 4 Níveis)",
+        "descricao": "Cure 1d12 +6 + 2x MAE PV (deixa resíduo psíquico)."
+      },
+      {
+        "nome": "Vibração Calmante",
+        "frequencia": "À Vontade",
+        "descricao": "Remova Confusão/Fúria/Pânico (deixa resíduo psíquico). Custa 7 PV."
+      }
+    ]
+  },"nebuloso": {
+    "nome": "Nebuloso",
+    "imageUrl": "https://images6.fanpop.com/image/photos/34100000/Marlon-pokemon-marlon-34135257-500-495.jpg",
+    "requisitos": "2 pokémons dos Tipos Água/Gelo",
+    "multi": "Saúde 16, Ataque Especial 16 e Especialista em Água/Gelo",
+    "descricao": "Hidromantes que controlam água e gelo. Criam barreiras aquáticas, congelam ambientes e neutralizam danos de granizo para aliados.",
+    "periciasClasse": ["Apneia", "Regeneração"],
+    "talentos": [
+      {
+        "nome": "Controle de Água",
+        "frequencia": "À Vontade",
+        "descricao": "Manipule até 10x MAE kg de líquido (alcance: 3x MAE metros). MAE mínimo 1."
+      },
+      {
+        "nome": "Controle de Gelo",
+        "frequencia": "À Vontade",
+        "descricao": "Manipule gelo ou congele água instantaneamente. Imuniza aliados a Granizo."
+      }
+    ]
+  },"terrulento": {
+    "nome": "Terrulento",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtMlEnWotoXkgcxhpZoK4-KhvNCyvWTcLhI8BprVlBPmi2H8VP-WOwTkNi43PdcLEfs7EHaimkbn5YP4VHSpPT4sWxVV5vvKVNo9jgVZ1eHsEVhZNW6j9W7KB3uQVtWg02COVls900Mhc/s16000-rw/800px-Young_Roark.jpg",
+    "requisitos": "2 pokémons dos Tipos Pedra/Planta/Terra",
+    "multi": "Saúde 16, Ataque Especial 16 e Especialista em Pedra/Planta/Terra",
+    "descricao": "Geomantes que dominam terra e flora. Levantam barreiras rochosas, controlam plantas e anulam danos de tempestades de areia.",
+    "periciasClasse": ["Deflexão", "Força"],
+    "talentos": [
+      {
+        "nome": "Controle de Plantas",
+        "frequencia": "À Vontade",
+        "descricao": "Manipule vegetação (até 10x MAE kg) ou acelere crescimento (custa 10 PV). MAE mínimo 1."
+      },
+      {
+        "nome": "Controle de Terra",
+        "frequencia": "À Vontade",
+        "descricao": "Manipule rochas/areia (até 10x MAE kg). Imuniza aliados a Tempestade de Areia."
+      }
+    ]
+  },"vidente": {
+    "nome": "Vidente",
+    "imageUrl": "https://images6.fanpop.com/image/photos/34100000/Caitlin-pokemon-caitlin-34182222-506-512.jpg",
+    "requisitos": "Ataque Especial 15",
+    "multi": "Ataque Especial 20 + Meditação + 2 pokémons Psíquicos",
+    "descricao": "Videntes que leem o passado de objetos/locais. Manifestam imagens fantasmagóricas para desvendar mistérios históricos.",
+    "periciasClasse": ["Investigação", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Passado Recente",
+        "frequencia": "À Vontade",
+        "descricao": "Veja eventos da última hora em um local/objeto (informações caóticas). Custa 5 PV."
+      },
+      {
+        "nome": "Tecer Imagem",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Materialize visões do passado como hologramas (1d20 + MAE ≥16). Alcance: 1,6 km."
+      }
+    ]
+  },"ranger": {
+    "nome": "Ranger",
+    "imageUrl": "https://i.pinimg.com/736x/8b/59/20/8b5920eb441a712d72a3f043ecde892a.jpg",
+    "requisitos": "Ataque 13, Velocidade 13",
+    "descricao": "Guardiões da ordem que estabelecem laços profundos com pokémons selvagens. Transformam criaturas em aliados prestativos através de técnicas de contenção e parceria.",
+    "periciasClasse": ["Acrobacia", "Corrida", "Empatia", "Engenharia", "Força", "Manipulação", "Performance", "Salto"],
+    "talentos": [
+      {
+        "nome": "Contenção",
+        "frequencia": "À Vontade",
+        "descricao": "Role 1d100 -20 para tornar um pokémon Prestativo (Chance de Captura do alvo). Consome 1 Carga do Estilizador."
+      },
+      {
+        "nome": "Parceria",
+        "frequencia": "À Vontade",
+        "descricao": "Converta um pokémon Prestativo em Parceiro permanente (Lealdade 2). Limite: 1 Parceiro."
+      }
+    ]
+  },"aventureiro": {
+    "nome": "Aventureiro",
+    "imageUrl": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/05/ash-ketchum-and-all-of-his-pokemon-in-the-anime-1.jpg",
+    "requisitos": "Velocidade 16 e 1 semana fora da civilização",
+    "multi": "Ataque 14, Velocidade 14 + Botânico/Observador",
+    "descricao": "Sobrevivencialista que domina ambientes selvagens. Fornece recursos básicos e orientação em situações extremas.",
+    "periciasClasse": ["Jejum", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Caça e Coleta",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Role 1d20 + MV (13+) para obter água/comida para 7 criaturas."
+      },
+      {
+        "nome": "Sentidos Aguçados",
+        "frequencia": "Constante",
+        "descricao": "Sabe direção norte, hora aproximada e previsão do tempo."
+      }
+    ]
+  },"cavaleiro": {
+    "nome": "Cavaleiro",
+    "imageUrl": "https://www.creativeuncut.com/gallery-36/art/plgp-pokemon-riding.jpg",
+    "requisitos": "2 pokémons usados como montaria por 1 dia cada",
+    "multi": "Velocidade 16 + 2 montarias",
+    "descricao": "Mestre em combate montado. Domina técnicas para permanecer estável em qualquer situação e proteger sua montaria.",
+    "periciasClasse": ["Corrida", "Salto"],
+    "talentos": [
+      {
+        "nome": "Aderência",
+        "frequencia": "Constante",
+        "descricao": "Sucesso automático em testes para permanecer montado, mesmo em posições extremas."
+      },
+      {
+        "nome": "Montaria de Guerra",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Desvia ataques recebidos para sua montaria (incluindo dano duplo)."
+      }
+    ]
+  },"detetive": {
+    "nome": "Detetive",
+    "imageUrl": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/83c97a13-4113-477c-96ce-46ddcd0571e4/width=512,original=false/00051-anything-v4.5-pruned_3756348294.jpeg",
+    "requisitos": "Prendeu criminosos 2 vezes",
+    "multi": "Velocidade 20",
+    "descricao": "Investigador forense que desvenda crimes e manipula suspeitos. Domina técnicas de análise e contra-inteligência.",
+    "periciasClasse": ["Investigação", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Arsenal",
+        "frequencia": "Uso Único (+1 uso a cada 10 Níveis)",
+        "descricao": "Escolha uma Habilidade permanente: Bisbilhoteiro, Desatenção, Foco Interior, Gatuno, Infiltração, Insônia, Premonição, Tensão ou Visão Aguçada."
+      },
+      {
+        "nome": "Criminologia",
+        "frequencia": "Constante",
+        "descricao": "+1 em todos os modificadores ao lidar com criminosos/suspeitos."
+      }
+    ]
+  },"guia": {
+    "nome": "Guia",
+    "imageUrl": "https://cdna.artstation.com/p/assets/images/images/046/920/432/large/ryoha-kosako-.jpg?1646306675",
+    "requisitos": "Velocidade 16",
+    "multi": "Depende da Classe base (ex: Artista Ataque 16, Cavaleiro Velocidade 16)",
+    "descricao": "Motivador que potencializa aliados. Amplifica forças de pokémons através de encorajamento tático.",
+    "periciasClasse": ["Intimidação", "Performance"],
+    "talentos": [
+      {
+        "nome": "Mais Força!",
+        "frequencia": "Diária (+1 uso a cada 4 Níveis)",
+        "descricao": "Aumente a Força de um pokémon aliado por MA (1 rodada em combate / 1 minuto fora)."
+      },
+      {
+        "nome": "Mais Longe!",
+        "frequencia": "Diária (+1 uso a cada 4 Níveis)",
+        "descricao": "Aumente Deslocamentos de um pokémon aliado por MV até o fim do encontro."
+      }
+    ]
+  },"oficial": {
+    "nome": "Oficial",
+    "imageUrl": "https://i.ytimg.com/vi/doG_XmmbrgY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfunc3L5KpLwn4VjClPuTzfo9New",
+    "requisitos": "Ataque 16, Velocidade 16, Autoridade",
+    "multi": "Impossível",
+    "descricao": "Líder militar com presença carismática. Potencializa aliados em combate e resolve crises com diplomacia aprimorada.",
+    "periciasClasse": ["Incansável", "Manipulação"],
+    "talentos": [
+      {
+        "nome": "Encorajamento",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Aliado causa dano extra igual ao seu MA/MV após você atingir o mesmo alvo."
+      },
+      {
+        "nome": "Status",
+        "frequencia": "Constante",
+        "descricao": "+5 em testes de comunicação devido à autoridade natural."
+      }
+    ]
+  },"pactuario": {
+    "nome": "Pactuário",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGB0ec8jowlRwg5E_hucr0thI5s8sWug5Xqw8AQ07CT20juvgtfQl2nZO2eaxm8hf4DaVVUwP0AnvZFxEq7e6ozK_t1EsgkqJ65aD2itb-sL8LOqro-N7afjct5yW_fTPaCdYOCaWGcm8/s610/Pokemon_Ranger_Guardian_Signs_Deoxys.png",
+    "requisitos": "Aliado a um Lendário",
+    "multi": "Impossível",
+    "descricao": "Campeão divino que invoca poderes de Lendários através de Símbolos mágicos. Age como agente direto de deuses pokémon.",
+    "periciasClasse": ["História", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Símbolo da Cura",
+        "frequencia": "Diária (+1 uso a cada 5 Níveis)",
+        "descricao": "Cure 2d20 + MA PV em um alvo. Consome 1 Carga do Estilizador."
+      },
+      {
+        "nome": "Símbolo da Proteção",
+        "frequencia": "Diária (+1 uso a cada 2 Níveis)",
+        "descricao": "Torne-se do Tipo do Lendário patrono ao sofrer dano."
+      }
+    ]
+  },"policial": {
+    "nome": "Policial",
+    "imageUrl": "https://cdn.donmai.us/original/97/ed/97edb34ff227caf81b2cde8629e39416.jpg",
+    "requisitos": "Ataque 16, Velocidade 16",
+    "multi": "Impossível",
+    "descricao": "Agente de elite com tecnologia avançada. Monitora PV de inimigos e opera com equipamentos de alta capacidade.",
+    "periciasClasse": ["Apneia", "Furtividade"],
+    "talentos": [
+      {
+        "nome": "Escâner",
+        "frequencia": "Constante",
+        "descricao": "Veja a porcentagem de PV restantes de qualquer pokémon."
+      },
+      {
+        "nome": "Estilizador Policial",
+        "frequencia": "Constante",
+        "descricao": "Bateria do Estilizador ampliada para 30 Cargas."
+      }
+    ]
+  },"treinador": {
+    "nome": "Treinador",
+    "imageUrl": "https://pbs.twimg.com/media/FpxAawCXoAE4ACu.jpg",
+    "requisitos": "Ataque 13, Ataque Especial 13",
+    "multi": "",
+    "descricao": "Especialistas em maximizar o potencial de combate de seus pokémons. Aprimoram ataques e identificam fraquezas inimigas com precisão.",
+    "periciasClasse": ["Concentração", "Corrida", "História", "Incansável", "Intimidação", "Investigação", "Manha", "Manipulação"],
+    "talentos": [
+      {
+        "nome": "Ataques Aprimorados",
+        "frequencia": "Constante",
+        "descricao": "Adicione metade do MA/MAE ao dano causado por seus pokémons antes da subtração de Defesa."
+      },
+      {
+        "nome": "Treinamento Aprimorado",
+        "frequencia": "Constante",
+        "descricao": "Seus pokémons ganham 20% a mais de experiência."
+      }
+    ]
+  },"azarao": {
+    "nome": "Azarão",
+    "imageUrl": "https://i.pinimg.com/736x/51/09/33/510933fee479455e497e79af89427504.jpg",
+    "requisitos": "Evitou a evolução de 3 pokémons",
+    "multi": "Ataque 16, Ataque Especial 12 + evitou a evolução de 4 pokémons",
+    "descricao": "Treinadores que preferem pokémons em estágios iniciais, extraindo o máximo de seu potencial sem evoluí-los.",
+    "periciasClasse": ["Incansável", "Performance"],
+    "talentos": [
+      {
+        "nome": "Buscador de Pedras Eternas",
+        "frequencia": "Semanal",
+        "descricao": "Role 1d20 + MAE (15+) para encontrar uma Pedra do Sempre."
+      },
+      {
+        "nome": "Força Oculta",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Escolha um Golpe de uma forma evolutiva do pokémon. O alvo usa o Golpe."
+      }
+    ]
+  },"cacador": {
+    "nome": "Caçador",
+    "imageUrl": "https://preview.redd.it/shout-out-to-hunter-j-one-of-the-best-yet-underrated-v0-v6gz98b4vd7b1.png?width=640&crop=smart&auto=webp&s=e6b81d5546a08e549abaaf394aa0972a0c69df45",
+    "requisitos": "Fugiu de um grande inimigo ou possui 3 pokémons com Perseguição",
+    "multi": "Ataque Especial 18 + 3 pokémons com Perseguição",
+    "descricao": "Perseguidores implacáveis que impedem fugas e subjugam inimigos com técnicas de caça.",
+    "periciasClasse": ["Corrida", "Força"],
+    "talentos": [
+      {
+        "nome": "Assalto Torrencial",
+        "frequencia": "Diária (+1 uso a cada 10 Níveis)",
+        "descricao": "Atacar inimigos que tentam fugir ou retornar à pokébola."
+      },
+      {
+        "nome": "Sem Escapatória",
+        "frequencia": "Constante",
+        "descricao": "Inimigos devem rolar 1d20 + MV para fugir (dificuldade: 10 + seu MA)."
+      }
+    ]
+  },"elementalista": {
+    "nome": "Elementalista",
+    "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b85f02c5-3d71-4a8c-bb79-8faea86f0446/defrb3n-ca20f2d8-e620-4779-a5dc-c62969c3eb3d.jpg/v1/fill/w_1280,h_1707,q_75,strp/brock__pewter_gym__by_junkcrab_defrb3n-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2I4NWYwMmM1LTNkNzEtNGE4Yy1iYjc5LThmYWVhODZmMDQ0NlwvZGVmcmIzbi1jYTIwZjJkOC1lNjIwLTQ3NzktYTVkYy1jNjI5NjljM2ViM2QuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Qpu5vGsKrdTf0N28sSUdHJm6yvCQ5hYiTlG8NP1B9Ao",
+    "requisitos": "4 pokémons do Tipo escolhido",
+    "multi": "Ataque 14 + 5 pokémons do Tipo escolhido",
+    "descricao": "Especialistas em um Tipo específico, aprimorando golpes e treinamento de pokémons alinhados ao elemento.",
+    "periciasClasse": ["Empatia", "Imunidade"],
+    "talentos": [
+      {
+        "nome": "Aprimorar Golpes Elementais",
+        "frequencia": "Constante",
+        "descricao": "Adicione metade do MA ao dano de Golpes do Tipo escolhido."
+      },
+      {
+        "nome": "Treinamento Elemental",
+        "frequencia": "Constante",
+        "descricao": "Pokémons do Tipo escolhido ganham 30% a mais de experiência."
+      }
+    ]
+  },"especialista": {
+    "nome": "Especialista",
+    "imageUrl": "https://i.pinimg.com/736x/de/0f/46/de0f4698d25b36bd3453f02fdcdabacd.jpg",
+    "requisitos": "3 pokémons com Atributo de Escolha 20",
+    "multi": "Ataque 16 + 3 pokémons com Atributo de Escolha 20 + Classe específica",
+    "descricao": "Mestres em aprimorar um Atributo específico (Força, Velocidade, etc.), transformando pokémons em especialistas únicos.",
+    "periciasClasse": [],
+    "talentos": [
+      {
+        "nome": "Subversão Estatística",
+        "frequencia": "À Vontade",
+        "descricao": "Reduza uma Fase do Atributo de Escolha de um inimigo (1 uso por combate por alvo)."
+      },
+      {
+        "nome": "Treinamento de Especialista",
+        "frequencia": "Constante",
+        "descricao": "Adicione metade do MA/MAE ao Atributo Basal de todos os seus pokémons."
+      }
+    ]
+  },"estrategista": {
+    "nome": "Estrategista",
+    "imageUrl": "https://artfiles.alphacoders.com/136/136127.png",
+    "requisitos": "Ataque Especial 14, somar pelo menos 10 Golpes não causadores de dano entre os Golpes conhecidos por todos os seus pokémons.",
+    "multi": "4 insígnias ou equivalentes.",
+    "descricao": "Estrategistas reconhecem a importância de ataques, mas se concentram em um campo menos excitante e muitas vezes ignorado nas batalhas pokémon. ",
+    "periciasClasse": ["Manha", "Percepção"],
+    "talentos": [
+      {
+        "nome": "Batedor",
+        "frequencia": "Diária. A cada 5 Níveis, receba um uso diária adicional.",
+        "descricao": "na próxima rodada, o alvo pode usar o Golpe Giro Rápido, e adiciona seu MA ao dano causado por este Giro Rápido."
+      },
+      {
+        "nome": "Maestria sobre o Terreno",
+        "frequencia": "Diária. A cada 5 Níveis, receba um uso diário adicional.",
+        "descricao": "Pelo resto do encontro, nenhum de seus pokémons recebe penalidades aos seus deslocamentos por Terreno Acidentado nem sofre penalidades de Acurácia quando tiverem alvos em Terreno Acidentado."
+      }
+    ]
+  },"inquebravel": {
+    "nome": "Inquebrável",
+    "imageUrl": "https://preview.redd.it/ok-i-dont-hate-horizons-but-im-starting-to-get-a-bit-v0-rirp47o6sx0c1.jpg?auto=webp&s=400f83fb75df4d421dbab6fc960447f5088605fd",
+    "requisitos": "Foi nocauteado ou possui 3 pokémons com Resistência",
+    "multi": "Guardião/Robusto + Ataque 16 + foi nocauteado ou possui 3 pokémons com Resistência",
+    "descricao": "Resistentes e protetores, mantêm-se de pé mesmo em situações extremas. Seus pokémons também são mais duráveis.",
+    "periciasClasse": ["Jejum", "Resiliência"],
+    "talentos": [
+      {
+        "nome": "Incansável",
+        "frequencia": "Constante",
+        "descricao": "Pokémons só ficam inconscientes em -25% PV (exceto Golpes de auto-destruição)."
+      },
+      {
+        "nome": "Saúde Inquebrável",
+        "frequencia": "Constante",
+        "descricao": "Distribua Pontos de Atributos em Saúde ao subir de nível, ignorando a Relação Basal."
+      }
+    ]
+  },"sincrono": {
+    "nome": "Síncrono",
+    "imageUrl": "https://64.media.tumblr.com/283af1d1beb844bf1d0eaab4f5eb9a44/015f083459ca836d-b6/s1280x1920/0aa163df7ad680e4a98a6d5c131e4963d41f6ec0.jpg",
+    "requisitos": "Você Isso e Você Aquilo!",
+    "multi": "Ataque 16, Ataque Especial 16 + Você Isso e Você Aquilo! + 6 pokémons leais",
+    "descricao": "Mestres em batalhas duplas, coordenam dois pokémons simultaneamente com estratégias combinadas.",
+    "periciasClasse": ["Concentração", "Performance"],
+    "talentos": [
+      {
+        "nome": "Espírito de Equipe",
+        "frequencia": "Constante",
+        "descricao": "Dois pokémons ativos elevam Fases do maior Atributo Basal do outro."
+      },
+      {
+        "nome": "Juntos!",
+        "frequencia": "Diária",
+        "descricao": "Combine dois Golpes do mesmo Tipo e Atributo em um único ataque poderoso."
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+    "pokebolas": [
+        {
+            "Pokébola": "Pokébola Básica",
+            "Preço": "200",
+            "Modificador": "+15",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Superbola",
+            "Preço": "500",
+            "Modificador": "+5",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Ultrabola",
+            "Preço": "1000",
+            "Modificador": "-5",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Bola Mestra",
+            "Preço": "Indisponível para Venda*",
+            "Modificador": "-100",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola de Safari",
+            "Preço": "2000",
+            "Modificador": "+0",
+            "Efeitos": "Pokébola autorizada para uso dentro de uma Zona de Safari."
+        },
+        {
+            "Pokébola": "Pokébola de Nível",
+            "Preço": "2000",
+            "Modificador": "+5; ou -15 se o Nível do alvo é menor que a metade do Nível do seu pokémon.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Atrativa",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se o alvo foi atraído ao encontro por uma isca.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Lunar",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se o alvo em algum ponto pode evoluir usando uma Pedra da Lua.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Amigável",
+            "Preço": "2000",
+            "Modificador": "-5",
+            "Efeitos": "A Lealdade do alvo começará 2."
+        },
+        {
+            "Pokébola": "Pokébola do Amor",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se o sexo do alvo é o oposto do sexo do seu pokémon.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Pesada",
+            "Preço": "2000",
+            "Modificador": "+5, reduzindo em 5 para cada Categoria de Peso do alvo mais pesada que Leve.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Rápida",
+            "Preço": "2000",
+            "Modificador": "+5; ou -15 se o alvo possui algum Deslocamento acima de 7.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Esportiva",
+            "Preço": "2000",
+            "Modificador": "+0",
+            "Efeitos": "Pokébola autorizada para uso dentro de uma Zona de Safari."
+        },
+        {
+            "Pokébola": "Pokébola Premiada",
+            "Preço": "2000",
+            "Modificador": "+0",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola de Repetição",
+            "Preço": "2000",
+            "Modificador": "+10; ou -15 se o alvo já consta na sua lista de Pokémons Possuídos.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Temporizada",
+            "Preço": "2000",
+            "Modificador": "+5, reduzindo em 5 para cada duas rodadas de combate (até o mínimo de -20).",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola de Ninho",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se o Nível do alvo é menor que 10.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola de Teia",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se o alvo é dos Tipos Água ou Inseto.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Bola de Mergulho",
+            "Preço": "2000",
+            "Modificador": "+5; ou -15 se estiver submerso ou no subterrâneo.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Luxuosa",
+            "Preço": "2000",
+            "Modificador": "-5",
+            "Efeitos": "Fica feliz."
+        },
+        {
+            "Pokébola": "Pokébola Curativa",
+            "Preço": "2000",
+            "Modificador": "-5",
+            "Efeitos": "Todos os PV são recuperados."
+        },
+        {
+            "Pokébola": "Pokébola Ligeira",
+            "Preço": "2000",
+            "Modificador": "-20; ou -15 se for usada na segunda rodada do combate ou -10 se for usada depois da segunda rodada.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Bola de Penumbra",
+            "Preço": "2000",
+            "Modificador": "+0; ou -15 se estiver muito escuro.",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola Estimável",
+            "Preço": "2000",
+            "Modificador": "-5",
+            "Efeitos": ""
+        },
+        {
+            "Pokébola": "Pokébola de Parque",
+            "Preço": "2000",
+            "Modificador": "+0",
+            "Efeitos": "Pokébola autorizada para uso dentro de uma Zona de Safari."
+        },
+        {
+            "Pokébola": "Pokébola Onírica",
+            "Preço": "2000",
+            "Modificador": "+0",
+            "Efeitos": "Pokébola funcional em sonhos."
+        },
+        {
+            "Pokébola": "Pokébola Bestial",
+            "Preço": "2000",
+            "Modificador": "+45; ou -50 se o alvo possui a Habilidade Ultrabesta.",
+            "Efeitos": ""
+        }
+    ]
+}

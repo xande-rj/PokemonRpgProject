@@ -8,6 +8,62 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const [selectedPokemonId, setSelectedPokemonId] = useState<string>('1');
   const [viewMode, setViewMode] = useState<'info' | 'attacks'>('info');
 
+  const expThresholds = [
+    0,    // Nível 1
+    25,   // Nível 2
+    50,   // Nível 3
+    100,  // Nível 4
+    150,  // Nível 5
+    200,  // Nível 6
+    400,  // Nível 7
+    600,  // Nível 8
+    800,  // Nível 9
+    1000, // Nível 10
+    1500, // Nível 11
+    2000, // Nível 12
+    3000, // Nível 13
+    4000, // Nível 14
+    5000, // Nível 15
+    6000, // Nível 16
+    7000, // Nível 17
+    8000, // Nível 18
+    9000, // Nível 19
+    10000 // Nível 20
+  ];
+
+  const getLevelFromExp = (exp: number): number => {
+    let level = 1;
+    for (let i = 0; i < expThresholds.length; i++) {
+      if (exp >= expThresholds[i]) {
+        level = i + 1;
+      }
+    }
+    return level;
+  };
+
+  const getExpProgress = (exp: number): number => {
+    const currentLevel = getLevelFromExp(exp);
+    // Se já estiver no nível máximo, retorna 100%
+    if (currentLevel >= expThresholds.length) return 100;
+    const currentThreshold = expThresholds[currentLevel - 1]; // nível atual
+    const nextThreshold = expThresholds[currentLevel]; // próximo nível
+    const progress = ((exp - currentThreshold) / (nextThreshold - currentThreshold)) * 100;
+    return progress;
+  };
+
+  const initialExpValues = Object.keys(data.pokemons).reduce((acc, id) => {
+    acc[id] = 0;
+    return acc;
+  }, {} as { [key: string]: number });
+  const [expValues, setExpValues] = useState<{ [key: string]: number }>(() => {
+    const savedExpValues = localStorage.getItem('pokemonExpValues');
+    return savedExpValues ? JSON.parse(savedExpValues) : initialExpValues;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('pokemonExpValues', JSON.stringify(expValues));
+  }, [expValues]);
+
   // Cria um objeto com os HPs iniciais de cada Pokémon
   const initialHPValues = Object.keys(data.pokemons).reduce((acc, id) => {
     const p = data.pokemons[id];
@@ -101,6 +157,19 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     const updatedHpValues = { ...hpValues, [id]: initialHPValues[id] };
     localStorage.setItem('pokemonHpValues', JSON.stringify(updatedHpValues));
   };
+
+  const handleAddExp = () => {
+    const expToAdd = Number(prompt('Digite quantos pontos de experiência adicionar:'));
+    if (isNaN(expToAdd)) return;
+    setExpValues((prev) => {
+      const newExp = prev[selectedPokemonId] + expToAdd;
+      // Calcula o novo nível com base na experiência acumulada
+      const newLevel = getLevelFromExp(newExp);
+      // Atualiza o nível do Pokémon (atenção: alterar o objeto data diretamente não é o ideal; em uma aplicação real, você teria um estado separado)
+      data.pokemons[selectedPokemonId].level = newLevel;
+      return { ...prev, [selectedPokemonId]: newExp };
+    });
+  };
   return (
     <div className="containerpok">
       <div className="main-content">
@@ -130,20 +199,22 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
           {viewMode === 'info' ? (
             <div className="info-section">
               <div className="stats">
-              <div>
-                <button onClick={() =>handleRecuperarHPPokemon(selectedPokemonId)}>
-                  Recuperar HP deste Pokémon
-                </button>
-              </div>
+                <div>
+                  <button onClick={() => handleRecuperarHPPokemon(selectedPokemonId)}>
+                    Recuperar HP deste Pokémon
+                  </button>
+                </div>
                 <div className="stat-item">
                   <span>HP</span>
                   <h3>{hpValues[selectedPokemonId]}</h3>
+                  
                   <div className="stat-bar">
                     <div
                       className="stat-fill"
                       style={{ width: `${hpValues[selectedPokemonId]}%` }}
                     ></div>
                   </div>
+                  
                   <div>
                     <button onClick={handleDanoFisico}>Dano Físico</button>
                   </div>
@@ -151,6 +222,24 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
                     <button onClick={handleDanoEspecial}>Dano Especial</button>
                   </div>
                 </div>
+                 {/* Seção de Experiência */}
+      <div className="exp-section" style={{ marginTop: '20px' }}>
+        <h4 style={{ color: 'black' }}>Experiência</h4>
+        <p style={{ color: 'black' }}>
+          {expValues[selectedPokemonId]} pontos - Progresso: {getExpProgress(expValues[selectedPokemonId]).toFixed(2)}%
+        </p>
+        <div className="exp-bar" style={{ background: '#ddd', height: '20px', width: '100%' }}>
+          <div
+            className="exp-fill"
+            style={{
+              background: '#48bb78',
+              height: '100%',
+              width: `${getExpProgress(expValues[selectedPokemonId])}%`,
+            }}
+          ></div>
+        </div>
+        <button onClick={handleAddExp}>Adicionar Experiência</button>
+      </div>
                 <div className="stat-row">
                   <div className="stat">
                     <span>Ataque</span>
@@ -203,7 +292,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
               >
                 D20
               </button>
-             
+
               {pokemon.ataques?.map((attack, index) => (
                 <div key={index} className="attack-card">
                   <div className="attack-header">
@@ -230,7 +319,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
           )}
         </div>
       </div>
-
+     
       <div className="pokemon-list">
         <h3 style={{ color: 'black' }}>Selecionar Pokémon</h3>
         {Object.values(data.pokemons).map((p) => (

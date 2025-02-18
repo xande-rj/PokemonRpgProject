@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './mypokemon.css';
 
 import { PokemonData } from '../pokemonDataInterface';
@@ -15,7 +15,13 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     return acc;
   }, {} as { [key: string]: number });
 
-  const [hpValues, setHpValues] = useState(initialHPValues);
+  const [hpValues, setHpValues] = useState<{ [key: string]: number }>(() => {
+    const savedHpValues = localStorage.getItem('pokemonHpValues');
+    return savedHpValues ? JSON.parse(savedHpValues) : initialHPValues;
+  });
+  useEffect(() => {
+    localStorage.setItem('pokemonHpValues', JSON.stringify(hpValues));
+  }, [hpValues]);
 
   // Obtenha o Pokémon selecionado
   const pokemon = data.pokemons[selectedPokemonId];
@@ -51,7 +57,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
 
     const defesaOriginal = pokemon.defesa;
     const diferenca = dano - defesaOriginal;
-    
+
     // Se o dano for menor ou igual à defesa, perde 1 ponto de HP; caso contrário, perde a diferença
     let novoHP: number;
     if (diferenca <= 0) {
@@ -61,7 +67,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     }
 
     if (novoHP < 0) novoHP = 0;
-    
+
     // Atualiza o HP apenas para o Pokémon selecionado
     setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
   };
@@ -71,7 +77,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
 
     const defesaOriginal = pokemon.spDefesa;
     const diferenca = dano - defesaOriginal;
-    
+
     // Se o dano for menor ou igual à defesa, perde 1 ponto de HP; caso contrário, perde a diferença
     let novoHP: number;
     if (diferenca <= 0) {
@@ -81,11 +87,20 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     }
 
     if (novoHP < 0) novoHP = 0;
-    
+
     // Atualiza o HP apenas para o Pokémon selecionado
     setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
   };
 
+  const handleRecuperarHPPokemon = (id: string) => {
+    setHpValues((prev) => ({
+      ...prev,
+      [id]: initialHPValues[id],
+    }));
+
+    const updatedHpValues = { ...hpValues, [id]: initialHPValues[id] };
+    localStorage.setItem('pokemonHpValues', JSON.stringify(updatedHpValues));
+  };
   return (
     <div className="containerpok">
       <div className="main-content">
@@ -115,6 +130,11 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
           {viewMode === 'info' ? (
             <div className="info-section">
               <div className="stats">
+              <div>
+                <button onClick={() =>handleRecuperarHPPokemon(selectedPokemonId)}>
+                  Recuperar HP deste Pokémon
+                </button>
+              </div>
                 <div className="stat-item">
                   <span>HP</span>
                   <h3>{hpValues[selectedPokemonId]}</h3>
@@ -183,7 +203,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
               >
                 D20
               </button>
-
+             
               {pokemon.ataques?.map((attack, index) => (
                 <div key={index} className="attack-card">
                   <div className="attack-header">
@@ -212,7 +232,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
       </div>
 
       <div className="pokemon-list">
-        <h3>Selecionar Pokémon</h3>
+        <h3 style={{ color: 'black' }}>Selecionar Pokémon</h3>
         {Object.values(data.pokemons).map((p) => (
           <div
             key={p.id}

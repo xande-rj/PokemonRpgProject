@@ -8,73 +8,101 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const [selectedPokemonId, setSelectedPokemonId] = useState<string>('1');
   const [viewMode, setViewMode] = useState<'info' | 'attacks'>('info');
 
-  const expThresholds = [
-    0,    // Nível 1
-    25,   // Nível 2
-    50,   // Nível 3
-    100,  // Nível 4
-    150,  // Nível 5
-    200,  // Nível 6
-    400,  // Nível 7
-    600,  // Nível 8
-    800,  // Nível 9
-    1000, // Nível 10
-    1500, // Nível 11
-    2000, // Nível 12
-    3000, // Nível 13
-    4000, // Nível 14
-    5000, // Nível 15
-    6000, // Nível 16
-    7000, // Nível 17
-    8000, // Nível 18
-    9000, // Nível 19
-    10000 // Nível 20
-  ];
-
-  const getLevelFromExp = (exp: number): number => {
-    let level = 1;
-    for (let i = 0; i < expThresholds.length; i++) {
-      if (exp >= expThresholds[i]) {
-        level = i + 1;
-      }
-    }
-    return level;
+  // xp necessario para subir de nivel
+  const xpRequirements: { [level: number]: number } = {
+    1: 25,   // Para sair do nível 1, precisa de 25 XP
+    2: 50,   // Para sair do nível 2, precisa de 50 XP
+    3: 100,  // Para sair do nível 3, precisa de 100 XP
+    4: 150,
+    5: 200,
+    6: 400,
+    7: 600,
+    8: 800,
+    9: 1000,
+    10: 1500,
+    11: 2000,
+    12: 3000,
+    13: 4000,
+    14: 5000,
+    15: 6000,
+    16: 7000,
+    17: 8000,
+    18: 9000,
+    19: 10000,
+    20:11500,
+    21:13000,
+    22:14500,
+    23:16000,
+    24:17500,
+    25:19000,
+    26:20500,
+    27:22000,
+    28:23500,
+    29:25000,
+    30:27500,
+    31:30000,
+    32:32500,
+    // O nível 20 pode ser considerado o máximo
   };
 
-  const getExpProgress = (exp: number): number => {
-    const currentLevel = getLevelFromExp(exp);
-    // Se já estiver no nível máximo, retorna 100%
-    if (currentLevel >= expThresholds.length) return 100;
-    const currentThreshold = expThresholds[currentLevel - 1]; // nível atual
-    const nextThreshold = expThresholds[currentLevel]; // próximo nível
-    const progress = ((exp - currentThreshold) / (nextThreshold - currentThreshold)) * 100;
-    return progress;
-  };
-
-  const initialExpValues = Object.keys(data.pokemons).reduce((acc, id) => {
-    acc[id] = 0;
+  // xp inicial de cada pokemon
+  const initialExpData = Object.keys(data.pokemons).reduce((acc, id) => {
+    const p = data.pokemons[id];
+    acc[id] = { xp: 0, level: p.level || 1 };
     return acc;
-  }, {} as { [key: string]: number });
-  const [expValues, setExpValues] = useState<{ [key: string]: number }>(() => {
-    const savedExpValues = localStorage.getItem('pokemonExpValues');
-    return savedExpValues ? JSON.parse(savedExpValues) : initialExpValues;
+  }, {} as { [key: string]: { xp: number; level: number } });
+
+  // salva xp no localstorage
+  const [expData, setExpData] = useState<{ [key: string]: { xp: number; level: number } }>(() => {
+    const saved = localStorage.getItem('pokemonExpData');
+    return saved ? JSON.parse(saved) : initialExpData;
   });
 
+  // Atualiza o localStorage sempre que houver alteração
   useEffect(() => {
-    localStorage.setItem('pokemonExpValues', JSON.stringify(expValues));
-  }, [expValues]);
+    localStorage.setItem('pokemonExpData', JSON.stringify(expData));
+  }, [expData]);
+
+  // Adiciona experiência ao Pokémon selecionado
+  const handleAddExp = () => {
+    const expToAdd = Number(prompt('Digite quantos pontos de experiência adicionar:'));
+    if (isNaN(expToAdd)) return;
+
+    setExpData((prev) => {
+      const current = prev[selectedPokemonId] || { xp: 0, level: 1 };
+      // Pega a XP necessária para sair do nível atual
+      const xpNeeded = xpRequirements[current.level] || Infinity;
+      let newXp = current.xp + expToAdd;
+      let newLevel = current.level;
+
+      if (newXp >= xpNeeded) {
+        // Ao atingir (ou ultrapassar) a marca, sobe de nível e reseta a XP
+        newLevel = current.level + 1;
+        newXp = 0;
+      }
+
+      return { ...prev, [selectedPokemonId]: { xp: newXp, level: newLevel } };
+    });
+  };
+
+  const currentExpInfo = expData[selectedPokemonId] || { xp: 0, level: 1 };
+  const xpNeeded = xpRequirements[currentExpInfo.level] || Infinity;
+  const expProgress = (currentExpInfo.xp / xpNeeded) * 100;
 
   // Cria um objeto com os HPs iniciais de cada Pokémon
   const initialHPValues = Object.keys(data.pokemons).reduce((acc, id) => {
     const p = data.pokemons[id];
-    acc[id] = (p.hp + p.level) * 4;
+    acc[id] = (p.hp + expData[selectedPokemonId]?.level) * 4;
     return acc;
   }, {} as { [key: string]: number });
 
+  // salva o hp no localstorage
   const [hpValues, setHpValues] = useState<{ [key: string]: number }>(() => {
     const savedHpValues = localStorage.getItem('pokemonHpValues');
     return savedHpValues ? JSON.parse(savedHpValues) : initialHPValues;
   });
+
+  // recupera o hp do localstorage
   useEffect(() => {
     localStorage.setItem('pokemonHpValues', JSON.stringify(hpValues));
   }, [hpValues]);
@@ -99,15 +127,16 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
       .catch(() => alert('Erro ao copiar'));
   };
 
-  const handleCopyCommandCD = () => {
+  // copia o comando d20
+  const CopyCommandCD = () => {
     const command = `1d20`;
     navigator.clipboard.writeText(command)
       .then(() => alert('Comando copiado!'))
       .catch(() => alert('Erro ao copiar'));
   };
 
-  // Função que aplica dano físico apenas ao Pokémon selecionado
-  const handleDanoFisico = () => {
+  // Função que aplica dano físico e especial apenas ao Pokémon selecionado
+  const DanoFisico = () => {
     const dano = Number(prompt('Digite o valor do dano Físico:'));
     if (isNaN(dano)) return; // Se não for número, sai
 
@@ -127,7 +156,8 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     // Atualiza o HP apenas para o Pokémon selecionado
     setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
   };
-  const handleDanoEspecial = () => {
+
+  const DanoEspecial = () => {
     const dano = Number(prompt('Digite o valor do dano Especial:'));
     if (isNaN(dano)) return; // Se não for número, sai
 
@@ -148,7 +178,8 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     setHpValues((prev) => ({ ...prev, [selectedPokemonId]: novoHP }));
   };
 
-  const handleRecuperarHPPokemon = (id: string) => {
+  // recupera totalmente o hp do pokemon
+  const RecuperarHPPokemon = (id: string) => {
     setHpValues((prev) => ({
       ...prev,
       [id]: initialHPValues[id],
@@ -158,25 +189,14 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     localStorage.setItem('pokemonHpValues', JSON.stringify(updatedHpValues));
   };
 
-  const handleAddExp = () => {
-    const expToAdd = Number(prompt('Digite quantos pontos de experiência adicionar:'));
-    if (isNaN(expToAdd)) return;
-    setExpValues((prev) => {
-      const newExp = prev[selectedPokemonId] + expToAdd;
-      // Calcula o novo nível com base na experiência acumulada
-      const newLevel = getLevelFromExp(newExp);
-      // Atualiza o nível do Pokémon (atenção: alterar o objeto data diretamente não é o ideal; em uma aplicação real, você teria um estado separado)
-      data.pokemons[selectedPokemonId].level = newLevel;
-      return { ...prev, [selectedPokemonId]: newExp };
-    });
-  };
+
   return (
     <div className="containerpok">
       <div className="main-content">
         <div className="pokemon-card">
           <div className="header">
             <h2>{pokemon.nickname}</h2>
-            <span className="id">LV : {pokemon.level}</span>
+            <span className="id">Lv: {expData[selectedPokemonId]?.level}</span>
           </div>
 
           <img src={pokemon.image} alt={pokemon.name} className="main-image" />
@@ -200,46 +220,48 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
             <div className="info-section">
               <div className="stats">
                 <div>
-                  <button onClick={() => handleRecuperarHPPokemon(selectedPokemonId)}>
+                  <button onClick={() => RecuperarHPPokemon(selectedPokemonId)}>
                     Recuperar HP deste Pokémon
                   </button>
                 </div>
                 <div className="stat-item">
                   <span>HP</span>
                   <h3>{hpValues[selectedPokemonId]}</h3>
-                  
+
                   <div className="stat-bar">
                     <div
                       className="stat-fill"
                       style={{ width: `${hpValues[selectedPokemonId]}%` }}
                     ></div>
                   </div>
-                  
+
                   <div>
-                    <button onClick={handleDanoFisico}>Dano Físico</button>
+                    <button onClick={DanoFisico}>Dano Físico</button>
                   </div>
                   <div>
-                    <button onClick={handleDanoEspecial}>Dano Especial</button>
+                    <button onClick={DanoEspecial}>Dano Especial</button>
                   </div>
                 </div>
-                 {/* Seção de Experiência */}
-      <div className="exp-section" style={{ marginTop: '20px' }}>
-        <h4 style={{ color: 'black' }}>Experiência</h4>
-        <p style={{ color: 'black' }}>
-          {expValues[selectedPokemonId]} pontos - Progresso: {getExpProgress(expValues[selectedPokemonId]).toFixed(2)}%
-        </p>
-        <div className="exp-bar" style={{ background: '#ddd', height: '20px', width: '100%' }}>
-          <div
-            className="exp-fill"
-            style={{
-              background: '#48bb78',
-              height: '100%',
-              width: `${getExpProgress(expValues[selectedPokemonId])}%`,
-            }}
-          ></div>
-        </div>
-        <button onClick={handleAddExp}>Adicionar Experiência</button>
-      </div>
+                {/* Seção de Experiência */}
+                <div className="exp-section" style={{ marginTop: '20px', color: 'black' }}>
+                  <h4>Experiência</h4>
+                  <p>
+                    {currentExpInfo.xp} / {xpNeeded} pontos
+                    <br />
+                    Progresso: {expProgress.toFixed(2)}%
+                  </p>
+                  <div className="exp-bar" style={{ background: '#ddd', height: '20px', width: '100%' }}>
+                    <div
+                      className="exp-fill"
+                      style={{
+                        background: '#48bb78',
+                        height: '100%',
+                        width: `${expProgress}%`,
+                      }}
+                    ></div>
+                  </div>
+                  <button onClick={handleAddExp}>Adicionar Experiência</button>
+                </div>
                 <div className="stat-row">
                   <div className="stat">
                     <span>Ataque</span>
@@ -287,7 +309,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
           ) : (
             <div className="attacks-section">
               <button
-                onClick={handleCopyCommandCD}
+                onClick={CopyCommandCD}
                 className="copy-button"
               >
                 D20
@@ -319,7 +341,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
           )}
         </div>
       </div>
-     
+
       <div className="pokemon-list">
         <h3 style={{ color: 'black' }}>Selecionar Pokémon</h3>
         {Object.values(data.pokemons).map((p) => (
@@ -331,7 +353,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
             <img src={p.image} alt={p.name} className="thumb" />
             <div className="list-info">
               <span>{p.nickname}</span>
-              <small>Lv: {p.level || 5}</small>
+              <small>Lv: {expData[p.id]?.level}</small>
             </div>
           </div>
         ))}

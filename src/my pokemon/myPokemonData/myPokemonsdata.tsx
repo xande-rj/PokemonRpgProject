@@ -7,7 +7,26 @@ import { Attack } from '../pokemonDataInterface';
 const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const [selectedPokemonId, setSelectedPokemonId] = useState<string>('1');
   const [viewMode, setViewMode] = useState<'info' | 'attacks'>('info');
+  // salva xp no localstorage
+  const [expData, setExpData] = useState<{ [key: string]: { xp: number; level: number } }>(() => {
+    const saved = localStorage.getItem('pokemonExpData');
+    return saved ? JSON.parse(saved) : initialExpData;
+  });
+  // salva o hp no localstorage
+  const [hpValues, setHpValues] = useState<{ [key: string]: number }>(() => {
+    const savedHpValues = localStorage.getItem('pokemonHpValues');
+    return savedHpValues ? JSON.parse(savedHpValues) : initialHPValues;
+  });
 
+  const [pokemonStats, setPokemonStats] = useState<{ [key: string]: any }>(() => {
+    const savedStats = localStorage.getItem('pokemonStats');
+    return savedStats ? JSON.parse(savedStats) : data.pokemons;
+  });
+
+  // Atualiza o localStorage sempre que pokemonStats mudar.
+  useEffect(() => {
+    localStorage.setItem('pokemonStats', JSON.stringify(pokemonStats));
+  }, [pokemonStats]);
   // xp necessario para subir de nivel
   const xpRequirements: { [level: number]: number } = {
     1: 25,   // Para sair do nível 1, precisa de 25 XP
@@ -29,19 +48,19 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     17: 8000,
     18: 9000,
     19: 10000,
-    20:11500,
-    21:13000,
-    22:14500,
-    23:16000,
-    24:17500,
-    25:19000,
-    26:20500,
-    27:22000,
-    28:23500,
-    29:25000,
-    30:27500,
-    31:30000,
-    32:32500,
+    20: 11500,
+    21: 13000,
+    22: 14500,
+    23: 16000,
+    24: 17500,
+    25: 19000,
+    26: 20500,
+    27: 22000,
+    28: 23500,
+    29: 25000,
+    30: 27500,
+    31: 30000,
+    32: 32500,
     // O nível 20 pode ser considerado o máximo
   };
 
@@ -52,11 +71,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     return acc;
   }, {} as { [key: string]: { xp: number; level: number } });
 
-  // salva xp no localstorage
-  const [expData, setExpData] = useState<{ [key: string]: { xp: number; level: number } }>(() => {
-    const saved = localStorage.getItem('pokemonExpData');
-    return saved ? JSON.parse(saved) : initialExpData;
-  });
+
 
   // Atualiza o localStorage sempre que houver alteração
   useEffect(() => {
@@ -70,13 +85,56 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
 
     setExpData((prev) => {
       const current = prev[selectedPokemonId] || { xp: 0, level: 1 };
-      // Pega a XP necessária para sair do nível atual
       const xpNeeded = xpRequirements[current.level] || Infinity;
       let newXp = current.xp + expToAdd;
       let newLevel = current.level;
 
       if (newXp >= xpNeeded) {
-        // Ao atingir (ou ultrapassar) a marca, sobe de nível e reseta a XP
+        // Ao atingir o XP necessário, solicita ao usuário que escolha um atributo para upgrade.
+        const choice = prompt(
+          "Level Up! Escolha um atributo para aumentar:\n" +
+          "1: HP\n2: Ataque\n3: Defesa\n4: spAtaque\n5: spDefesa\n6: Velocidade"
+        );
+        let attributeKey = "";
+        switch (choice) {
+          case "1":
+            attributeKey = "hp";
+            break;
+          case "2":
+            attributeKey = "ataque";
+            break;
+          case "3":
+            attributeKey = "defesa";
+            break;
+          case "4":
+            attributeKey = "spAtaque";
+            break;
+          case "5":
+            attributeKey = "spDefesa";
+            break;
+          case "6":
+            attributeKey = "velocidade";
+            break;
+          default:
+            alert("Escolha inválida! Nenhum atributo foi aumentado.");
+            break;
+        }
+        console.log(attributeKey);
+        if (attributeKey !== "") {
+          // Atualiza o atributo escolhido para o Pokémon selecionado.
+          setPokemonStats((prevStats) => {
+            const currentStats = prevStats[selectedPokemonId];
+            return {
+              ...prevStats,
+              [selectedPokemonId]: {
+                ...currentStats,
+                [attributeKey]: currentStats[attributeKey] + 1,
+              },
+            };
+          });
+        }
+
+        // Sobe de nível e reseta a experiência
         newLevel = current.level + 1;
         newXp = 0;
       }
@@ -84,6 +142,8 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
       return { ...prev, [selectedPokemonId]: { xp: newXp, level: newLevel } };
     });
   };
+
+  const pokemonStatus = pokemonStats[selectedPokemonId];
 
   const currentExpInfo = expData[selectedPokemonId] || { xp: 0, level: 1 };
   const xpNeeded = xpRequirements[currentExpInfo.level] || Infinity;
@@ -96,11 +156,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     return acc;
   }, {} as { [key: string]: number });
 
-  // salva o hp no localstorage
-  const [hpValues, setHpValues] = useState<{ [key: string]: number }>(() => {
-    const savedHpValues = localStorage.getItem('pokemonHpValues');
-    return savedHpValues ? JSON.parse(savedHpValues) : initialHPValues;
-  });
+
 
   // recupera o hp do localstorage
   useEffect(() => {
@@ -264,24 +320,28 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
                 </div>
                 <div className="stat-row">
                   <div className="stat">
+                    <span>HP</span>
+                    <strong>{pokemonStatus.hp || 'N/A'}</strong>
+                  </div>
+                  <div className="stat">
                     <span>Ataque</span>
-                    <strong>{pokemon.ataque || 'N/A'}</strong>
+                    <strong>{pokemonStatus.ataque || 'N/A'}</strong>
                   </div>
                   <div className="stat">
                     <span>Defesa</span>
-                    <strong>{pokemon.defesa || 'N/A'}</strong>
+                    <strong>{pokemonStatus.defesa || 'N/A'}</strong>
                   </div>
                   <div className="stat">
                     <span>spAtaque</span>
-                    <strong>{pokemon.spAtaque || 'N/A'}</strong>
+                    <strong>{pokemonStatus.spAtaque || 'N/A'}</strong>
                   </div>
                   <div className="stat">
                     <span>spDefesa</span>
-                    <strong>{pokemon.spDefesa || 'N/A'}</strong>
+                    <strong>{pokemonStatus.spDefesa || 'N/A'}</strong>
                   </div>
                   <div className="stat">
                     <span>Velocidade</span>
-                    <strong>{pokemon.velocidade || 'N/A'}</strong>
+                    <strong>{pokemonStatus.velocidade || 'N/A'}</strong>
                   </div>
                 </div>
                 <div className="stat">

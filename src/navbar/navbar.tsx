@@ -9,7 +9,7 @@ const Navbar = () => {
             <Link to='/meditens'>Itens Medicinais</Link>
             <Link to='/holditens'>Itens Mantidos</Link>
             <Link to='/classes'>Classes</Link>
-            <Link to='/meusPokemons'>Meus Pokemons</Link>
+            {/* <Link to='/meusPokemons'>Meus Pokemons</Link> */}
         </nav>
     );
 }

@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router";
 import Navbar from "../../navbar/navbar";
-import './captorcss.css';
+import './Captorcss.css';
 const CaptorPage = () => {
     return (
         <>

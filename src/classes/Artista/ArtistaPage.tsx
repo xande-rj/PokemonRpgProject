@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router";
 import Navbar from "../../navbar/navbar";
-import './artistcss.css';
+import './Artistcss.css';
 const ArtistaPage = () => {
     return (
         <>

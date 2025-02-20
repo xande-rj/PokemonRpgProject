@@ -7,11 +7,27 @@ import { Attack } from '../pokemonDataInterface';
 const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const [selectedPokemonId, setSelectedPokemonId] = useState<string>('1');
   const [viewMode, setViewMode] = useState<'info' | 'attacks'>('info');
+
+    // xp inicial de cada pokemon
+    const initialExpData = Object.keys(data.pokemons).reduce((acc, id) => {
+      const p = data.pokemons[id];
+      acc[id] = { xp: 0, level: p.level || 1 };
+      return acc;
+    }, {} as { [key: string]: { xp: number; level: number } });
+    
   // salva xp no localstorage
   const [expData, setExpData] = useState<{ [key: string]: { xp: number; level: number } }>(() => {
     const saved = localStorage.getItem('pokemonExpData');
     return saved ? JSON.parse(saved) : initialExpData;
   });
+  
+   // Cria um objeto com os HPs iniciais de cada Pokémon
+   const initialHPValues = Object.keys(data.pokemons).reduce((acc, id) => {
+    const p = data.pokemons[id];
+    acc[id] = (p.hp + expData[selectedPokemonId]?.level) * 4;
+    return acc;
+  }, {} as { [key: string]: number });
+
   // salva o hp no localstorage
   const [hpValues, setHpValues] = useState<{ [key: string]: number }>(() => {
     const savedHpValues = localStorage.getItem('pokemonHpValues');
@@ -64,12 +80,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
     // O nível 20 pode ser considerado o máximo
   };
 
-  // xp inicial de cada pokemon
-  const initialExpData = Object.keys(data.pokemons).reduce((acc, id) => {
-    const p = data.pokemons[id];
-    acc[id] = { xp: 0, level: p.level || 1 };
-    return acc;
-  }, {} as { [key: string]: { xp: number; level: number } });
+
 
 
 
@@ -149,13 +160,7 @@ const PokemonComponent = ({ data }: { data: PokemonData }) => {
   const xpNeeded = xpRequirements[currentExpInfo.level] || Infinity;
   const expProgress = (currentExpInfo.xp / xpNeeded) * 100;
 
-  // Cria um objeto com os HPs iniciais de cada Pokémon
-  const initialHPValues = Object.keys(data.pokemons).reduce((acc, id) => {
-    const p = data.pokemons[id];
-    acc[id] = (p.hp + expData[selectedPokemonId]?.level) * 4;
-    return acc;
-  }, {} as { [key: string]: number });
-
+ 
 
 
   // recupera o hp do localstorage

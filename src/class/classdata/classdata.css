@@ -100,8 +100,31 @@
     fill: #ced8de;
   }
   .class{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  @media (max-width: 769px) {
+
+    .class{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 599px) {
+
+    .class{
+      display: grid;
+      grid-template-columns: 1fr  ;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }

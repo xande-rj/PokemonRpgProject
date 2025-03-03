@@ -1,39 +1,65 @@
 .table_component {
-    overflow: auto;
+    overflow-x: auto;
     width: 100%;
-}
-
-.table_component table {
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+  }
+  
+  .table_component table {
     border: 1px solid #dededf;
-    height: 100%;
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    border-spacing: 1px;
+    border-spacing: 0;
     text-align: center;
-}
-
-.table_component caption {
+    font-size: 14px;
+  }
+  
+  .table_component caption {
     caption-side: top;
     text-align: left;
-}
-
-.table_component th {
+    font-weight: bold;
+    padding: 8px;
+  }
+  
+  .table_component th,
+  .table_component td {
     border: 1px solid #dededf;
+    padding: 10px;
+  }
+  
+  .table_component th {
     background-color: #eceff1;
-    color: #000000;
-    padding: 5px;
-}
-
-.table_component td {
-    border: 1px solid #dededf;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px;
-}
-input{
+    color: #000;
+  }
+  
+  .table_component td {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Estilo para inputs */
+  input {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
-}
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Ajustes para telas menores */
+  @media screen and (max-width: 756px) {
+    .table_component table {
+      font-size: 12px;
+    }
+    
+    .table_component th,
+    .table_component td {
+      padding: 8px;
+    }
+    
+    input {
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,58 @@
+/* Estilos base */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #ff0000aa);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  transition: background-color 200ms, color 200ms;
+}
+
+.menu a:hover {
+  background-color: #646cff;
+  color: #ffffff;
+}
+
+/* Estilos para Mobile */
+@media (max-width: 600px) {
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1em 0;
+  }
+
+  .menu a {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+}

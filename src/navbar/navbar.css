@@ -1,15 +1,98 @@
-.menu {
+/* Estilos gerais da navbar */
+.navbar {
+  background-color: #222;
+  padding: 0.5em 1em;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  width: 80px;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+/* Efeito opcional para o ícone quando aberto */
+.hamburger .bar.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .bar.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu de navegação */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  transition: max-height 0.3s ease;
+}
+
+/* Links do menu */
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #333;
+  color: #646cff;
+  border-radius: 4px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 658px) {
+  .hamburger {
     display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 1em 0;
-    
   }
-  .menu{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1em;
+  
+  /* Esconde o menu por padrão */
+  .nav-menu {
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    border-radius: 0 0 8px 8px;
+    display: none;
   }
-  .menu:hover {
-    color: #646cff;
+  
+  /* Mostra o menu quando ativo */
+  .nav-menu.active {
+    display: flex;
   }
+}
